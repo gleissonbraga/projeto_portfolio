@@ -15,6 +15,7 @@ body {
     background-color: #222222;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #333333;
 
 
     position: sticky;
