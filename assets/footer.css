@@ -32,6 +32,10 @@
     margin-left: 12px;
     text-decoration: none;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .contato-links__conexao li a:hover {
@@ -40,5 +44,4 @@
     -webkit-text-fill-color: transparent;
     border-bottom: 1px solid #ffffff;
     transform: scale(1.2);
-    
 }
