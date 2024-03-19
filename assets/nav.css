@@ -2,6 +2,18 @@
     --cor-font-cinza: #ffffff6a;
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
 body {
     max-width: 1920px;
     background-color: #222222;
@@ -78,6 +90,8 @@ body {
 .perfil-sobre__nome {
     font-size: 3rem;
     color: #ffffff;
+    opacity: 0; 
+    animation: fadeIn 4s forwards;
 }
 
 .perfil-sobre__paragrafo {

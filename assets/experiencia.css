@@ -69,6 +69,11 @@
     color: #ffffff6a;
 }
 
+.experiencia-estudos-curso__paragrafo span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
 .experiencia-habilidades-ferramentas {
     display: flex;
     flex-direction: column;
