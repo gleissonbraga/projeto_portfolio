@@ -99,3 +99,31 @@ progress::-webkit-progress-value {
     border-radius: 20px;
 
 }
+
+@media only screen and (max-width: 800px){
+    #experiencia {
+        height: 50rem;
+    }
+    
+    .experiencia-skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experiencia-estudos {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experiencia-estudos-curso__titulo, .experiencia-estudos-curso__paragrafo {
+        width: 100%;
+    }
+
+    .experiencia-habilidades {
+        width: 100%;
+        display: block;
+    }
+}

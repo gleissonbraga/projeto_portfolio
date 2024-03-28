@@ -100,3 +100,10 @@
     -webkit-text-fill-color: transparent;
     border-bottom: 1px solid #ffffff;
 }
+
+
+@media only screen and (max-width: 800px){
+    .projetos-conteudo {
+        margin-bottom: 30px;
+    }
+}
