@@ -103,7 +103,7 @@ body {
 .perfil-links {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.2rem;
     margin-left: 1rem;
 }
 
@@ -151,6 +151,29 @@ body {
     background-image: linear-gradient(to left, #0B486B, #F56217);
 }
 
+.perfil-links__curriculo {
+    width: 8.4rem;
+    height: 2.8rem;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #0B486B, #F56217);
+    border: 2px solid #ffffff42;
+}
+
+.perfil-links__curriculo a {
+    background-color: #333333;
+    width: 6.4rem;
+    height: 2.8rem;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.perfil-links__curriculo a:hover {
+    background-image: linear-gradient(to left, #0B486B, #F56217);
+}
+
+
 @media only screen and (max-width: 800px){
     .perfil {
         display: flex;
@@ -161,17 +184,31 @@ body {
     }
 
     .perfil-img img {
+        
         width: 300px;
-        height: 340px;
+        height: 350px;
     }
 
     .perfil-sobre__paragrafo {
-        width: 100%;
+        width: 96%;
         justify-content: center;
     }
 
     .perfil-links {
         align-items: center;
         justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .nav {
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .nav-container {
+        flex-direction: column;
     }
 }

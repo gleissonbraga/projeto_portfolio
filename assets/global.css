@@ -13,3 +13,7 @@ svg {
     color: white;
 
 }
+
+#container-bloco_um {
+    max-width: 1500px;
+}
