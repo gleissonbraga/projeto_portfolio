@@ -96,7 +96,7 @@ body {
 
 .perfil-sobre__paragrafo {
     color: #ffffff;
-    width: 42rem;
+    width: 90%;
     justify-content: left;
 }
 
@@ -174,7 +174,9 @@ body {
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px){    
+
+
     .perfil {
         display: flex;
         flex-direction: column;
@@ -210,5 +212,32 @@ body {
 
     .nav-container {
         flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
     }
+
+    .perfil {
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .perfil-sobre {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .perfil-sobre__nome, .perfil-sobre__area {
+        text-align: center;
+    }
+
+    .perfil-sobre__paragrafo {
+        width: 80%;
+        padding: 20px;
+    }
+
+
 }

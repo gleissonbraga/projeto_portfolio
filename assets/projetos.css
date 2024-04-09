@@ -113,3 +113,16 @@
         width: 94%;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    #projetos {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .projetos-box {
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+}
