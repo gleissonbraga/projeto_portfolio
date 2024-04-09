@@ -125,4 +125,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    .projetos-conteudo {
+        width: 70%;
+    }
+
+    .projetos-conteudo__descricao {
+        width: 100%;
+    }
 }

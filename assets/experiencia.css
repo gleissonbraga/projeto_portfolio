@@ -131,13 +131,22 @@ progress::-webkit-progress-value {
 
 @media only screen and (max-width: 450px){
     #experiencia {
+        width: 98%;
         padding-top: 5px;
         height: auto;
     }
 
+   
+
+    .experiencia-habilidades{
+        padding: 35px;
+    }
+
     .experiencia-habilidades-ferramentas  {
         gap: 10px;
+        width: 80%;
     }
+
 
 
 

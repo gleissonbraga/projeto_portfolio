@@ -14,12 +14,8 @@ svg {
 
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 #container-bloco_um {
-    max-width: 1800px;
+    max-width: 1700px;
 }
