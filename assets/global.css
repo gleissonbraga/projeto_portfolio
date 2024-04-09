@@ -17,5 +17,6 @@ svg {
 
 
 #container-bloco_um {
+    min-width: 350px;
     max-width: 1700px;
 }

@@ -105,12 +105,29 @@
 
 
 @media only screen and (max-width: 800px){
+    .perfil-sobre {
+        justify-content: center;
+        align-items: center;
+    }
+    
     .projetos-conteudo {
         margin-bottom: 30px;
     }
 
     #projetos {
-        width: 94%;
+        width: 100%;
+    }
+
+    .projetos-box {
+        width: 90%;
+    }
+
+    .projeto-conteuno__nome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
     }
 }
 

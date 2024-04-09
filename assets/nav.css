@@ -176,6 +176,10 @@ body {
 
 @media only screen and (max-width: 800px){    
 
+    
+    #container-bloco_um {
+        width: 120%;
+    }
 
     .perfil {
         display: flex;
@@ -239,5 +243,8 @@ body {
         padding: 20px;
     }
 
+    #container-bloco_um {
+        width: 150%;
+    }
 
 }

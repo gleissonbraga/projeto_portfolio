@@ -104,6 +104,12 @@ progress::-webkit-progress-value {
     #experiencia {
         height: 50rem;
     }
+
+    .experiencia-titulo {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
     
     .experiencia-skills {
         display: flex;
@@ -123,7 +129,7 @@ progress::-webkit-progress-value {
     }
 
     .experiencia-habilidades {
-        width: 100%;
+        width: 90%;
         display: block;
     }
 }
@@ -136,10 +142,24 @@ progress::-webkit-progress-value {
         height: auto;
     }
 
-   
+
+    .experiencia-titulo {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+
+    }
+
+    .experiencia-estudos__titulo {
+        width: 96%;
+        text-align: center;
+    }
 
     .experiencia-habilidades{
-        padding: 35px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .experiencia-habilidades-ferramentas  {
