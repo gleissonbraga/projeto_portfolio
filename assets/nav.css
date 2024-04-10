@@ -225,6 +225,11 @@ body {
     .perfil-sobre {
         justify-content: center;
         align-items: center;
+        width: 90%;
+    }
+
+    .perfil-links {
+        flex-direction: column;
     }
     
     .perfil-sobre__nome, .perfil-sobre__area {
@@ -236,8 +241,5 @@ body {
         padding: 20px;
     }
 
-    #container-bloco_um {
-        width: 150%;
-    }
 
 }

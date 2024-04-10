@@ -142,6 +142,10 @@ progress::-webkit-progress-value {
         height: auto;
     }
 
+    .experiencia-estudos {
+        padding: 0;
+    }
+
 
     .experiencia-titulo {
         width: 100%;
