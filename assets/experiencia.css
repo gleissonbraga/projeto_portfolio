@@ -100,10 +100,19 @@ progress::-webkit-progress-value {
 
 }
 
+@media only screen and (max-width: 1110px){
+    #experiencia {
+        height: auto;
+    }
+
+}
+
 @media only screen and (max-width: 800px){
     #experiencia {
         height: 50rem;
     }
+
+
 
     .experiencia-titulo {
         width: 100%;
@@ -168,7 +177,9 @@ progress::-webkit-progress-value {
 
     .experiencia-habilidades-ferramentas  {
         gap: 10px;
-        width: 80%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
 
 

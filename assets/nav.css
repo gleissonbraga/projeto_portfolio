@@ -209,8 +209,12 @@ body {
 
     .nav-container {
         flex-direction: column;
-        padding: 20px;
-        gap: 1rem;
+        padding: 5px;
+        gap: 0.5rem;
+    }
+
+    .nav-container li {
+        font-size: 1rem;
     }
 
     .perfil {
@@ -237,7 +241,7 @@ body {
     }
 
     .perfil-sobre__paragrafo {
-        width: 80%;
+        width: 92%;
         padding: 20px;
     }
 
