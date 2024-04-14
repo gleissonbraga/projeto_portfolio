@@ -14,6 +14,13 @@
   }
 
 
+.nav-mobile {
+    display: none;
+}
+
+
+
+
 body {
     background-color: #222222;
     margin: 0 auto;
@@ -202,9 +209,57 @@ body {
 
 
 @media only screen and (max-width: 450px) {
-    .nav {
+    
+    /* codigo da ação do menu*/
+    
+    .nav-mobile {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: block;
+        background-color: #222222;
+    }
+    
+    .nav-mobile-teste {
         width: 100%;
-        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        position: relative;
+    }
+
+   
+
+    .nav-mobile-button__img svg{
+        width: 80%;
+        height: 2rem;
+    }
+
+    .nav-container {
+        width: 98%;
+        position: absolute;
+        left: 0;
+        display: none;
+        z-index: 100%;
+        background-color:  #222222;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .nav-mobile:hover .nav-container {
+        display: block;
+    }
+
+    
+    
+    
+    
+    /* codigo verdadeiro*/
+    .nav {
+        display: none; /* excluir*/
     }
 
     .nav-container {
@@ -218,12 +273,13 @@ body {
     }
 
     .perfil {
-        width: 98%;
+        width: 90%;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 0;
+        margin: 1rem;
     }
 
     .perfil-sobre {
