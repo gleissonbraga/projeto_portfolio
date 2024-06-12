@@ -8,6 +8,10 @@
     box-sizing: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 svg {
     display: flex;
     color: white;
