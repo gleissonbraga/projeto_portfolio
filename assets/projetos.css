@@ -72,6 +72,30 @@
     border-bottom-right-radius: 0;
 }
 
+.projetos-conteudo__img3 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(img/projeto_hamburgueria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.projetos-conteudo__img4 {
+    width: 100%;
+    height: 10rem;
+    background-image: url(img/projetoapi.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .projetos-conteudo__descricao {
     width: 95%;
     height: 10rem;
