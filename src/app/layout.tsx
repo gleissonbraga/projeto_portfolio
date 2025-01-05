@@ -12,11 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// const poppins = Poppins({
-//   variable: 'T',
-//   subsets: ["latin"],
-//   weigth: ['100' , '300' , '900'],
-// });
 
 export const metadata: Metadata = {
   title: "Gleisson Braga",
