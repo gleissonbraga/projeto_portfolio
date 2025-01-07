@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Red_Hat_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,6 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const redHatMono = Red_Hat_Mono({
+  variable: "--font-hat-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Gleisson Braga",

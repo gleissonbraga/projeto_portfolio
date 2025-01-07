@@ -25,8 +25,8 @@ export function Menu() {
                     <Link href="/" className="text-xl font-bold uppercase font-poppins tracking-wider pr-1">
                         <span className="text-[#D62828] font-extrabold">&lt;</span>
                             Gleisson Braga
+                        <span className="text-[#D62828] font-extrabold uppercase tracking-wider text-xl">/&gt;</span>
                     </Link>
-                        <span className="text-[#D62828] font-extrabold uppercase font-poppins tracking-wider text-xl">/&gt;</span>
                 </div>
                 <nav className="flex uppercase gap-[4rem] font-semibold" >
                     <Link
@@ -56,13 +56,13 @@ export function Menu() {
                 </nav>
                 <div className="flex gap-4 tracking-wider">
                     <a href="https://github.com/gleissonbraga" target="_blank">
-                        <Image src="svg/github.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100"/>
+                        <Image src="svg/github.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100 transition-transform duration-300 ease-in-out"/>
                     </a>
                     <a href="https://www.linkedin.com/in/gleisson-braga/" target="_blank">
-                        <Image src="svg/linkedin.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100"/>
+                        <Image src="svg/linkedin.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100 transition-transform duration-300 ease-in-out"/>
                     </a>
                     <a href="mailto:bragagleisson@gmail.com" target="_blank">
-                        <Image src="svg/email.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100"/>
+                        <Image src="svg/email.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100 transition-transform duration-300 ease-in-out"/>
                     </a>
                 </div>
                 <div className="flex gap-3 h-[100%] items-center">
