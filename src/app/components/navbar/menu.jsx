@@ -21,7 +21,7 @@ export function Menu() {
                 w-full 
                 z-50
             ">
-                <div>
+                <div className="">
                     <Link href="/" className="text-xl font-bold uppercase font-poppins tracking-wider pr-1">
                         <span className="text-[#D62828] font-extrabold">&lt;</span>
                             Gleisson Braga
@@ -36,7 +36,7 @@ export function Menu() {
                         Início
                     </Link>
                     <Link
-                        href="/"
+                        href="#about-me"
                         className="hover:underline hover:decoration-[#D62828] hover:underline-offset-4 hover:opacity-85"
                     >
                         Sobre
@@ -61,11 +61,11 @@ export function Menu() {
                     <a href="https://www.linkedin.com/in/gleisson-braga/" target="_blank">
                         <Image src="svg/linkedin.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100 transition-transform duration-300 ease-in-out"/>
                     </a>
-                    <a href="mailto:bragagleisson@gmail.com" target="_blank">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bragagleisson@gmail.com" target="_blank">
                         <Image src="svg/email.svg" alt="Icon" width={24} height={24} className="filter invert hover:scale-[1.1] delay-100 transition-transform duration-300 ease-in-out"/>
                     </a>
                 </div>
-                <div className="flex gap-3 h-[100%] items-center">
+                <div className="flex gap-3 items-center">
                     <Image src="svg/brasil.svg" alt="Icon" width={24} height={24} className="rounded-full border-solid border p-[0.4rem] border-[#B0AEAE] w-8 h-8"/>
                     <Image src="svg/sol.svg" alt="Icon" width={24} height={24} className="rounded-full border-solid border p-[0.4rem] border-[#B0AEAE] w-8 h-8"/>
                 </div>
