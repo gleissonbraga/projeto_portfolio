@@ -51,7 +51,7 @@ export function Menu() {
                         Habilidade
                     </Link>
                     <Link
-                        href="/"
+                        href="#projects"
                         className="hover:underline hover:decoration-[#D62828] hover:underline-offset-4 hover:opacity-85"
                     >
                         Projetos

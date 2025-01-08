@@ -17,6 +17,13 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         DM_Sans: ['DM sans', 'sans-serif']
       },
+      animation: {
+        'slide-bg': 'slide-bg 3s ease-in-out infinite',
+      },
+      backgroundPosition: {
+        '100%': '100%',
+        '-100%': '-100%',
+      },
     },
   },
   plugins: [],

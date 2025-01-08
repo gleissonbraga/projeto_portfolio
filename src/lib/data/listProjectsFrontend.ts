@@ -1,11 +1,14 @@
 
 
+
 export const projectsFrontend = [
-    {
-        name: "Teste 1",
+    {   
+        id: 1,
+        name: "front",
+        image: "",
         techs: [
             {
-                svg: "svg/git.svg"
+                svg: "svg/github-black.svg"
             },
             {
                 svg: "svg/git.svg"
@@ -19,7 +22,9 @@ export const projectsFrontend = [
         deploy: ""
     },
     {
+        id: 2,
         name: "Teste 2",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"
@@ -36,7 +41,9 @@ export const projectsFrontend = [
         deploy: ""
     },
     {
+        id: 3,
         name: "Test 3",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"

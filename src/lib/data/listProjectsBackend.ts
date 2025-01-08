@@ -1,8 +1,10 @@
 
 
 export const projectsBackend = [
-    {
-        name: "Teste 1",
+    {   
+        id: 1,
+        name: "back",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"
@@ -15,11 +17,13 @@ export const projectsBackend = [
             },
 
         ],
-        repository: "",
-        deploy: ""
+        repository: "https://pomofocus.io/",
+        deploy: "https://pomofocus.io/"
     },
     {
+        id: 2,
         name: "Teste 2",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"
@@ -36,7 +40,9 @@ export const projectsBackend = [
         deploy: ""
     },
     {
+        id: 3,
         name: "Test 3",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"

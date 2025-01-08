@@ -1,8 +1,10 @@
 
 
 export const projectsFullstack = [
-    {
-        name: "Teste 1",
+    {   
+        id: 1,
+        name: "full",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"
@@ -19,7 +21,9 @@ export const projectsFullstack = [
         deploy: ""
     },
     {
+        id: 2,
         name: "Teste 2",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"
@@ -36,7 +40,9 @@ export const projectsFullstack = [
         deploy: ""
     },
     {
+        id: 3,
         name: "Test 3",
+        image: "",
         techs: [
             {
                 svg: "svg/git.svg"
