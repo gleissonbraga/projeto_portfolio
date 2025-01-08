@@ -7,7 +7,7 @@ export function About(){
    const newTitle = "sobre mim"
 
    return (
-        <section id="about-me" className="w-[100%] h-[700px] bg-white flex pt-14 flex-col items-center">
+        <section id="about-me" className="w-[100%] bg-white flex pt-14 flex-col items-center">
 
              <Title title={newTitle} />
 
@@ -15,7 +15,7 @@ export function About(){
                <div className=" w-[52%] h-[500px] flex flex-col p-4 text-black items-center justify-evenly " >
                   <h3 className="uppercase tracking-wider text-[26px] font-bold font-poppins" >Gleisson Braga </h3>
                   <p className="w-[80%] text-gray-700 text-[18px]" >
-                     Sou natural de Viamão - RS ao lado de Porto Alegre. Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Unisenac, cursando 4° semestre. Atualmente procuro realizar a transição de carreira e busco como meta ser um Desenvolvedor Fullstack. Hoje além da faculdade me esforço ao máximo para estudar na horas vagas e desenvolver projetos. Atualmente possuo expência e projetos em algumas tecnologias como <span>Python, NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, Versionamento Git e GitHub</span>.
+                     Sou natural de Viamão - RS ao lado de Porto Alegre. Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Unisenac, cursando 4° semestre. Atualmente procuro realizar a transição de carreira e busco como meta ser um Desenvolvedor Fullstack. Hoje além da faculdade me esforço ao máximo para estudar nas horas vagas e desenvolver projetos para fixação. Atualmente possuo expência e projetos em algumas tecnologias como <span>Python, NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, Versionamento Git e GitHub</span>.
                   </p>
                   <a 
                      href="curriculo/curriculo.pdf" 

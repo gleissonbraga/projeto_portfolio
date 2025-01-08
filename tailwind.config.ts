@@ -1,3 +1,4 @@
+import { DM_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -14,6 +15,7 @@ export default {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        DM_Sans: ['DM sans', 'sans-serif']
       },
     },
   },
