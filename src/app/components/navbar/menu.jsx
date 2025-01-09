@@ -17,8 +17,11 @@ export function Menu() {
                 p-4
                 fixed 
                 top-0 
-                left-0 
-                w-full 
+                left-1/2 
+                transform 
+                -translate-x-1/2 
+                w-[96%]
+                rounded-full
                 z-50
             ">
                 <div className="">
@@ -42,13 +45,13 @@ export function Menu() {
                         Sobre
                     </Link>
                     <Link
-                        href="/"
+                        href="#skill"
                         className="hover:underline hover:decoration-[#D62828] hover:underline-offset-4 hover:opacity-85"
                     >
                         Habilidade
                     </Link>
                     <Link
-                        href="/"
+                        href="#projects"
                         className="hover:underline hover:decoration-[#D62828] hover:underline-offset-4 hover:opacity-85"
                     >
                         Projetos
