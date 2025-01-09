@@ -15,6 +15,3 @@ export default function Title({title}: TitleProperty) {
         </div>
     )
 }
-
-
-// box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;

@@ -4,60 +4,83 @@
 export const projectsFrontend = [
     {   
         id: 1,
-        name: "front",
-        image: "",
+        name: "em desenvolvimento",
+        image: "image/emDesenvolvimento.jpg",
         techs: [
-            {
-                svg: "svg/github-black.svg"
+            {   
+                idSvg: 1,
+                svg: "svg/emDesenvolvimento.svg"
             },
             {
-                svg: "svg/git.svg"
+                svg: "svg/emDesenvolvimento.svg"
             },
             {
-                svg: "svg/git.svg"
+                svg: "svg/emDesenvolvimento.svg"
             },
 
         ],
-        repository: "",
-        deploy: ""
+        repository: "#",
+        deploy: "#"
     },
     {
         id: 2,
-        name: "Teste 2",
-        image: "",
+        name: "em desenvolvimento",
+        image: "image/emDesenvolvimento.jpg",
         techs: [
-            {
-                svg: "svg/git.svg"
+            {   
+                idSvg: 2,
+                svg: "svg/emDesenvolvimento.svg"
             },
             {
-                svg: "svg/git.svg"
+                svg: "svg/emDesenvolvimento.svg"
             },
             {
-                svg: "svg/git.svg"
+                svg: "svg/emDesenvolvimento.svg"
             },
 
         ],
-        repository: "",
-        deploy: ""
+        repository: "#",
+        deploy: "#"
     },
     {
         id: 3,
-        name: "Test 3",
-        image: "",
+        name: "em desenvolvimento",
+        image: "image/emDesenvolvimento.jpg",
         techs: [
-            {
-                svg: "svg/git.svg"
+            {   
+                idSvg: 3,
+                svg: "svg/emDesenvolvimento.svg"
             },
             {
-                svg: "svg/git.svg"
+                svg: "svg/emDesenvolvimento.svg"
             },
             {
-                svg: "svg/git.svg"
+                svg: "svg/emDesenvolvimento.svg"
             },
 
         ],
-        repository: "",
-        deploy: ""
+        repository: "#",
+        deploy: "#"
+    },
+    {
+        id: 4,
+        name: "em desenvolvimento",
+        image: "image/emDesenvolvimento.jpg",
+        techs: [
+            {   
+                idSvg: 4,
+                svg: "svg/emDesenvolvimento.svg"
+            },
+            {
+                svg: "svg/emDesenvolvimento.svg"
+            },
+            {
+                svg: "svg/emDesenvolvimento.svg"
+            },
+
+        ],
+        repository: "#",
+        deploy: "#"
     },
 
 ]

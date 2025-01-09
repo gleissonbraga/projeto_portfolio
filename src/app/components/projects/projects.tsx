@@ -10,12 +10,9 @@ import Image from "next/image"
 
 
 const Projects: React.FC = () => {
-    const [activeTab, setActiveTab] = useState<'frontend' | 'backend' | 'fullstack'>('fullstack')
+    const [activeTab, setActiveTab] = useState<'frontend' | 'backend' | 'fullstack'>('frontend')
     
-    const selectFrontend = ` ${activeTab === 'frontend' ? 'bg-[#EEEAEA] border-b-2 border-[#D62828]' : 'bg-white'}`
-    const selectBackend = ` ${activeTab === 'backend' ? 'bg-[#EEEAEA] border-b-2 border-[#D62828]' : 'bg-white'}`
-    const selectFullstack = ` ${activeTab === 'fullstack' ? 'bg-[#EEEAEA] border-b-2 border-[#D62828]' : 'bg-white'}`
-    const teste = activeTab.charAt(0).toUpperCase() + activeTab.slice(1)
+    const wordTitle = activeTab.charAt(0).toUpperCase() + activeTab.slice(1)
 
     const projects = {
         frontend: projectsFrontend,
@@ -23,49 +20,71 @@ const Projects: React.FC = () => {
         fullstack: projectsFullstack
     }
 
+    const buttonStyles = (tab: 'frontend' | 'backend' | 'fullstack') => 
+        `font-DM_Sans px-2 py-1 uppercase rounded-full transition-all duration-300 ${
+            activeTab === tab ? ' w-[8rem] text-[#D62828]' : 'bg-white w-[3rem] text-gray-700'
+        }`;
+
+    const buttonText = (tab: 'frontend' | 'backend' | 'fullstack') => {
+        if (activeTab === tab) {
+            return tab.charAt(0).toUpperCase() + tab.slice(1);
+        }
+        switch (tab) {
+            case 'frontend':
+                return 'FE';
+            case 'backend':
+                return 'BE';
+            case 'fullstack':
+                return 'FS';
+            default:
+                return '';
+        }
+    };
     
 
     return(
-
         
-        <section id="projects" className="pt-14 relative h-[700px] flex flex-col items-center">
+        
+        <section id="projects" className="min-h-[43rem] pt-14 relative flex flex-col items-center">
 
-            <Title title={teste} />
+            <Title title={wordTitle} />
 
-            <div className="w-[8rem] h-[10rem] absolute top-12 left-14 rounded-b-lg flex flex-col items-center justify-center  text-black font-[500]" style={{boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 3px 0px"}}>
-                <h3 className="w-[100%] h-[40%] mb-4 font-DM_Sans flex items-center justify-center">Projetos</h3>
-                <div className="h-[60%]">
-                <button className={`w-[100%] font-DM_Sans px-1 py-1 ${selectFrontend}`} onClick={() => setActiveTab('frontend')}>Frontend</button>
-                <button className={`w-[100%] font-DM_Sans px-1 py-1 ${selectBackend}`} onClick={() => setActiveTab('backend')}>Backend</button>
-                <button className={`w-[100%] font-DM_Sans px-1 py-1 rounded-b-lg ${selectFullstack}`} onClick={() => setActiveTab('fullstack')}>Fullstack</button>
+            <div className="w-[8rem] absolute top-60 left-4 rounded-b-lg flex flex-col items-center justify-center  text-black font-[500]">
+                <div className="flex flex-col justify-center items-center gap-8">
+                    <button className={buttonStyles('frontend')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('frontend')}>{buttonText('frontend')}</button>
+                    <button className={buttonStyles('backend')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('backend')}>{buttonText('backend')}</button>
+                    <button className={buttonStyles('fullstack')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('fullstack')}>{buttonText('fullstack')}</button>
                 </div>
             </div>
-            <div className="bg-orange-500 w-full h-[500px] mt-5 flex justify-end">
-                <div className="bg-blue-600 w-[86%] h-[500px] ">
-                    {projects[activeTab].map((project, index) => (
-                        <div key={project.id}>
-                            
-                            <div>
-                                <h4>{project.name}</h4>
-                                <div>
-                                    <span>Techs</span>
-                                    {project.techs.map((tech) => (
-                                        <Image src={tech.svg} alt="Icon" width={34} height={34}/>
-                                    ))}
-                                </div>
-                                <div>
-                                    <a href={project.repository}>Github</a>
-                                    <a href={project.deploy}>Deploy</a>
+            <div className=" w-full min-h-[500px] mt-5 flex justify-end">
+                <div className=" w-[90%] h-[auto] flex gap-10 flex-wrap justify-center p-5  ">
+                    {projects[activeTab].map((project) => (
+                        <div key={project.id} className="w-[520px] flex gap-4">
+                            <div className="w-[50%] flex justify-center items-center flex-col gap-5 text-black">
+                                <h4 className="uppercase font-bold">{project.name}</h4>
+                                <div className="text-center">
+                                    <span className=" text-center font-semibold">Techs</span>
+                                        <div className="flex flex-wrap gap-2 mt-6">
+                                            {project.techs.map((tech) => (
+                                                <div key={tech.idSvg}>
+                                                    <Image src={tech.svg} alt="Icon" width={34} height={34}/>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                <div className="flex items-center justify-center flex-row gap-4 w-full">
+                                    <a href={project.repository} className="w-[42%] h-10  rounded-2xl flex justify-center items-center gap-2 hover:scale-[1.06] transition-transform duration-500 hover:text-[#d82626]" style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"}} target="_blank" >Github <img src="svg/github-black.svg" alt="" className="w-6 h-6"/></a>
+                                    <a href={project.deploy} className="w-[42%] h-10  rounded-2xl flex justify-center items-center gap-2 hover:scale-[1.06] transition-transform duration-500 hover:text-[#d82626]" style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"}} target="_blank" >Deploy <img src="svg/deploy.svg" alt="" className="w-6 h-6"/></a>
                                 </div>
                             </div>
-                            <div>
-                                <img src={project.image} alt="" />
+                            <div className="w-[44%] rounded-3xl">
+                                <img src={project.image} alt="" className="rounded-3xl w-full h-full" />
                             </div>
                         </div>
                     ))}
 
                 </div>
-
+               
 
             </div>
         </section>
