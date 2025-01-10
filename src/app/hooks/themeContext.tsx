@@ -1,14 +1,17 @@
 "use client";
 
-import { createContext, useState, useContext, useEffect, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 const ThemeContext = createContext({
   theme: "light",
-  toggleTheme: () => {},
+  isDropDownOpen: false,
+  toggleTheme: (newTheme: string) => {},
+  toggleDropDown: () => {},
 });
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState("light");
+  const [isDropDownOpen, setIsDropDownOpen] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
@@ -16,15 +19,19 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
   }, []);
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+  const toggleTheme = (newTheme: string) => {
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.toggle("dark", newTheme === "dark");
+    setIsDropDownOpen(false); // Fecha o dropdown ao mudar o tema
+  };
+
+  const toggleDropDown = () => {
+    setIsDropDownOpen(!isDropDownOpen);
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, isDropDownOpen, toggleTheme, toggleDropDown }}>
       {children}
     </ThemeContext.Provider>
   );
