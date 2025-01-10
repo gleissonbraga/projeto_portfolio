@@ -1,4 +1,6 @@
-import "@/app/layout"
+"use client"
+
+import { useTheme } from "../../hooks/themeContext";
 import Image from "next/image"
 import Link from "next/link"
 
@@ -16,19 +18,59 @@ import Link from "next/link"
 // }
 
 export default function HomePage() {
+    const {theme} = useTheme()
+
+
     return (
-        <section className="relative bg-[url('/image/background_home.jpeg')] bg-cover bg-center min-h-screen text-[#000000]">
+        <section className={`
+        ${theme === 'light' ? "bg-[url('/image/background_home.jpeg')]" : "bg-[url('/image/background-dark-dois.jpg')]"}
+        ${theme === 'dark' ? "bg-[url('/image/background-dark-dois.jpg')]')]" : "bg-[url('/image/background_home.jpeg')]"}
+        relative 
+        bg-cover 
+        bg-center 
+        min-h-screen`} 
+        >
 
             <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
             
             <div className="relative flex flex-col pt-64 pl-60 w-[64%]  gap-4">
-                <h1 className="uppercase text-[#F5080C] text-[60px] font-extrabold text-stroke">Desenvolvedor Full Stack</h1>
+                <h1 className={`
+                ${theme === 'light' ? "text-[#F5080C]" : "text-[#546aab]"}
+                ${theme === 'dark' ? "text-[#546aab]" : "text-[#F5080C]"}
+                 
+                uppercase 
+                text-[60px] 
+                font-extrabold 
+                text-stroke`}
+                >
+                    Desenvolvedor Full Stack
+                </h1>
                 <p className="text-[32px] text-[#ffffff] font-light">Olá, eu sou Gleisson Braga</p>
                 <a href="https://wa.me/5551999303193?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"
-                 className="bg-white w-[180px] h-[54] p-3 rounded-3xl flex items-center justify-center gap-2 font-extrabold text-[#F5080C] text-[22px] font-sans hover:scale-[1.1] transition-transform duration-500 ease-in-out">
+                 className={`
+                ${theme === 'light' ? "text-[#F5080C]" : "text-[#546aab]"}
+                ${theme === 'dark' ? "text-[#546aab]" : "text-[#F5080C]"}
+                
+                      
+                 bg-white 
+                 w-[180px] 
+                 h-[54] 
+                 p-3
+                 rounded-3xl 
+                 flex 
+                 items-center 
+                 justify-center 
+                 gap-2 
+                 font-extrabold 
+                 text-[22px] 
+                 font-sans 
+                 hover:scale-[1.1] 
+                 transition-transform 
+                 duration-500 
+                 ease-in-out`}
+                 >
                     Contato 
-                    <Image src="svg/telefone.svg" alt="Icon" width={18} height={18}/></a>
-
+                    <Image src={theme === 'light' ? "svg/telefone.svg" : "svg/telefone-dark.svg"} alt="Icon" width={18} height={18}/></a>
                     <div>
             </div>
             </div>
