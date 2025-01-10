@@ -4,18 +4,18 @@
 export const projectsFrontend = [
     {   
         id: 1,
-        name: "em desenvolvimento",
-        image: "image/emDesenvolvimento.jpg",
+        name: "Calculadora JS",
+        image: "image/calculadora.jpg",
         techs: [
             {   
                 idSvg: 1,
-                svg: "svg/emDesenvolvimento.svg"
+                svg: "svg/html5.svg"
             },
             {
-                svg: "svg/emDesenvolvimento.svg"
+                svg: "svg/css3.svg"
             },
             {
-                svg: "svg/emDesenvolvimento.svg"
+                svg: "svg/javascript.svg"
             },
 
         ],
