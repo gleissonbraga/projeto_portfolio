@@ -169,11 +169,11 @@ export function Menu() {
                          absolute 
                          top-full 
                          right-20  
-                         w-24
+                         w-28
                          opacity-80
                          rounded-lg 
                          shadow-lg
-                         p-2
+                         p-1
                          gap-2
                          flex
                          flex-col
@@ -182,8 +182,10 @@ export function Menu() {
                          `}>
                                                             
                             <button onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} disabled={theme === 'light'} className={`
-                                ${theme === 'light' ? "" : "filter invert"}
-                                ${theme === 'dark' ? "filter invert" : ""}
+                                ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert "}
+                                ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                p-2
+                                rounded-xl
                                 text-black
                                 w-full 
                                 text-start
@@ -194,8 +196,11 @@ export function Menu() {
                                 Claro
                             </button>
                             <button onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} disabled={theme === 'dark'} className={`
-                                ${theme === 'light' ? "" : "filter invert"}
-                                ${theme === 'dark' ? "filter invert" : ""}
+                                ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert  "}
+                                ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                p-2
+                                
+                                rounded-xl
                                 text-black
                                 w-full 
                                 text-start

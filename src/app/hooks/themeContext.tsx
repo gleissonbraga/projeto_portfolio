@@ -23,7 +23,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.toggle("dark", newTheme === "dark");
-    setIsDropDownOpen(false); // Fecha o dropdown ao mudar o tema
+    setIsDropDownOpen(false)
   };
 
   const toggleDropDown = () => {
