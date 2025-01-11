@@ -24,22 +24,22 @@ export const projectsFrontend = [
     },
     {
         id: 2,
-        name: "em desenvolvimento",
-        image: "image/emDesenvolvimento.jpg",
+        name: "Gestão de Estoque",
+        image: "image/gestao_estoque_react.jpeg",
         techs: [
             {   
                 idSvg: 2,
-                svg: "svg/emDesenvolvimento.svg"
+                svg: "svg/html5.svg"
             },
             {
-                svg: "svg/emDesenvolvimento.svg"
+                svg: "svg/css3.svg"
             },
             {
-                svg: "svg/emDesenvolvimento.svg"
+                svg: "svg/react.svg"
             },
 
         ],
-        repository: "#",
+        repository: "https://github.com/gleissonbraga/projeto_gestao_de_estoque",
         deploy: "#"
     },
     {

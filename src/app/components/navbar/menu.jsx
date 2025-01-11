@@ -1,20 +1,11 @@
-'use client'
-
+"use client"
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+import { useTheme } from "../../hooks/themeContext";
 
 export function Menu() {
-    const [theme, setTheme] = useState('light')
-    const [isDropDownOpen, setIsDropDownOpen] = useState(false)
-
-
-    const toggleTheme = (newTheme) => {
-        setTheme(newTheme)
-        setIsDropDownOpen(false)
-    }
-
+    const { theme, isDropDownOpen, toggleTheme, toggleDropDown } = useTheme();
 
     return (
         <>
@@ -23,9 +14,9 @@ export function Menu() {
                 h-[3.31rem] 
                 flex 
                 justify-around 
-                ${theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-black"}
+                ${theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-[#292626]"}
 
-                ${ theme === 'dark' ? "bg-black text-[#fffffff]" : "bg-[#FFFFFF]"}
+                ${ theme === 'dark' ? "bg-[#292626] text-[#fffffff]" : "bg-[#FFFFFF]"}
                 
                 items-center 
                 
@@ -101,7 +92,7 @@ export function Menu() {
                     <Link
                         href="#projects"
                         className={` 
-                            ${theme === 'dark' ? " hover:decoration-[#D62828]" : " hover:decoration-[#546aab] "}
+                            ${theme === 'light' ? " hover:decoration-[#D62828]" : " hover:decoration-[#546aab] "}
                             ${theme === 'dark' ? " hover:decoration-[#546aab]" : " hover:decoration-[#D62828] "}
 
                              hover:underline 
@@ -147,7 +138,7 @@ export function Menu() {
                 </div>
                 <div className="flex gap-3 items-center">
                     {/* <Image src="svg/brasil.svg" alt="Icon" width={24} height={24} className="rounded-full border-solid border p-[0.4rem] border-[#B0AEAE] w-8 h-8"/> */}
-                    <button onClick={() => setIsDropDownOpen(!isDropDownOpen)}>
+                    <button onClick={toggleDropDown}>
                         <Image src={theme === 'light' ? "svg/sol.svg" : "svg/lua.svg"} 
                             alt="Icon" 
                             width={24} 
@@ -178,11 +169,11 @@ export function Menu() {
                          absolute 
                          top-full 
                          right-20  
-                         w-24
+                         w-28
                          opacity-80
                          rounded-lg 
                          shadow-lg
-                         p-2
+                         p-1
                          gap-2
                          flex
                          flex-col
@@ -190,9 +181,11 @@ export function Menu() {
                          items-center
                          `}>
                                                             
-                            <button onClick={() => toggleTheme('light')} className={`
-                                ${theme === 'light' ? "" : "filter invert"}
-                                ${theme === 'dark' ? "filter invert" : ""}
+                            <button onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} disabled={theme === 'light'} className={`
+                                ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert "}
+                                ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                p-2
+                                rounded-xl
                                 text-black
                                 w-full 
                                 text-start
@@ -202,9 +195,12 @@ export function Menu() {
                                 <img src="svg/sol.svg" alt="" className="w-4"/>
                                 Claro
                             </button>
-                            <button onClick={() => toggleTheme('dark')} className={`
-                                ${theme === 'light' ? "" : "filter invert"}
-                                ${theme === 'dark' ? "filter invert" : ""}
+                            <button onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} disabled={theme === 'dark'} className={`
+                                ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert  "}
+                                ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                p-2
+                                
+                                rounded-xl
                                 text-black
                                 w-full 
                                 text-start
