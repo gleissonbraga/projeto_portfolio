@@ -4,8 +4,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { useTheme } from "../../hooks/themeContext";
 
+
 export function Menu() {
-    const { theme, isDropDownOpen, toggleTheme, toggleDropDown } = useTheme();
+    const { theme, isDropDownOpen, toggleTheme, toggleDropDown, toggleLanguage, isDropLanguage, language, toggleDropLang} = useTheme();
+
+
 
     return (
         <>
@@ -15,11 +18,8 @@ export function Menu() {
                 flex 
                 justify-around 
                 ${theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-[#292626]"}
-
                 ${ theme === 'dark' ? "bg-[#292626] text-[#fffffff]" : "bg-[#FFFFFF]"}
-                
                 items-center 
-                
                 shadow-md 
                 p-4
                 fixed 
@@ -63,7 +63,7 @@ export function Menu() {
                             hover:underline-offset-4 
                             hover:opacity-85`}
                     >
-                        Início
+                        Início t('welcome')
                     </Link>
                     <Link
                         href="#about-me"
@@ -136,8 +136,87 @@ export function Menu() {
                         ease-in-out`}/>
                     </a>
                 </div>
-                <div className="flex gap-3 items-center">
+                <div className="
+                flex 
+                gap-3 
+                items-center">
                     {/* <Image src="svg/brasil.svg" alt="Icon" width={24} height={24} className="rounded-full border-solid border p-[0.4rem] border-[#B0AEAE] w-8 h-8"/> */}
+
+                    <button onClick={toggleLanguage}>
+                        <Image src={language === 'pt' ? "svg/brasil.svg" : "svg/unitedStates.svg"}  
+                            alt="Icon" 
+                            width={24} 
+                            height={24} 
+                            className={`
+                                hover:scale-[1.1]
+                                duration-500
+                                trasition
+                                rounded-full 
+                                border-solid 
+                                border 
+                                p-[0.4rem] 
+                                border-[#B0AEAE] 
+                                w-8 
+                                h-8
+                                `} 
+                                />
+                    </button>
+                    { isDropLanguage && (
+                        <div className={`
+                            ${theme === 'light' ? " bg-white" : ""}
+                            ${theme === 'dark' ? " bg-black" : ""}
+                             absolute 
+                             top-full 
+                             right-28  
+                             w-28
+                             opacity-80
+                             rounded-lg 
+                             shadow-lg
+                             p-1
+                             gap-2
+                             flex
+                             flex-col
+                             justify-center
+                             items-center
+                             `}>
+                                                                
+                                <button onClick={() => toggleDropLang(language === 'en' ? 'pt' : 'en')} className={`
+                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert "}
+                                    ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                    p-2
+                                    rounded-xl
+                                    text-black
+                                    w-full 
+                                    text-start
+                                    flex
+                                    text-[0.9rem]  
+                                    uppercase
+                                    items-center 
+                                    gap-2`}>
+                                    <img src="svg/brasil.svg" alt="" className="w-4"/>
+                                    pt-br
+                                </button>
+                                <button onClick={() => toggleDropLang(language === 'pt' ? 'en' : 'pt')} className={`
+                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert  "}
+                                    ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                    p-2
+                                    rounded-xl
+                                    text-black
+                                    w-full 
+                                    text-start
+                                    flex  
+                                    text-[0.9rem]
+                                    uppercase
+                                    items-center 
+                                    gap-2`}>
+                                    <img src="svg/unitedStates.svg" alt="" className="w-4"/>
+                                    en-us
+                                </button>
+                            </div>
+                    )
+
+                    }
+                    
                     <button onClick={toggleDropDown}>
                         <Image src={theme === 'light' ? "svg/sol.svg" : "svg/lua.svg"} 
                             alt="Icon" 
@@ -151,7 +230,8 @@ export function Menu() {
                                 trasition
                                 rounded-full 
                                 border-solid 
-                                border p-[0.4rem] 
+                                border 
+                                p-[0.4rem] 
                                 border-[#B0AEAE] 
                                 w-8 
                                 h-8

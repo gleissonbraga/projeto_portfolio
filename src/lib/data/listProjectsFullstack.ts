@@ -61,25 +61,25 @@ export const projectsFullstack = [
         repository: "#",
         deploy: "#"
     },
-    {
-        id: 4,
-        name: "em desenvolvimento",
-        image: "image/emDesenvolvimento.jpg",
-        techs: [
-            {   
-                idSvg: 4,
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
+    // {
+    //     id: 4,
+    //     name: "em desenvolvimento",
+    //     image: "image/emDesenvolvimento.jpg",
+    //     techs: [
+    //         {   
+    //             idSvg: 4,
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
+    //         {
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
+    //         {
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
 
-        ],
-        repository: "#",
-        deploy: "#"
-    },
+    //     ],
+    //     repository: "#",
+    //     deploy: "#"
+    // },
 
 ]

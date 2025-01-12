@@ -85,12 +85,15 @@ const Projects: React.FC = () => {
                     <button className={buttonStyles('fullstack')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('fullstack')}>{buttonText('fullstack')}</button>
                 </div>
             </div>
-            <div className=" w-full min-h-[500px] mt-5 flex justify-end ">
+            <div className=" w-full min-h-[500px]  mt-5 flex justify-end ">
                 <div className=" w-[90%] h-[auto] flex gap-10 flex-wrap justify-center p-5  ">
                     {projects[activeTab].map((project) => (
                         <div key={project.id} className="
                         w-[520px] 
-                        flex gap-4"
+                        h-[200px]
+                        flex 
+                        gap-4
+                        "
                         >
                             <div className={`
                             ${theme === 'light' ? "text-black" : "text-white"}

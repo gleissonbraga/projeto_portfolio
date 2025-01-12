@@ -42,45 +42,45 @@ export const projectsFrontend = [
         repository: "https://github.com/gleissonbraga/projeto_gestao_de_estoque",
         deploy: "#"
     },
-    {
-        id: 3,
-        name: "em desenvolvimento",
-        image: "image/emDesenvolvimento.jpg",
-        techs: [
-            {   
-                idSvg: 3,
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
+    // {
+    //     id: 3,
+    //     name: "em desenvolvimento",
+    //     image: "image/emDesenvolvimento.jpg",
+    //     techs: [
+    //         {   
+    //             idSvg: 3,
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
+    //         {
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
+    //         {
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
 
-        ],
-        repository: "#",
-        deploy: "#"
-    },
-    {
-        id: 4,
-        name: "em desenvolvimento",
-        image: "image/emDesenvolvimento.jpg",
-        techs: [
-            {   
-                idSvg: 4,
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
+    //     ],
+    //     repository: "#",
+    //     deploy: "#"
+    // },
+    // {
+    //     id: 4,
+    //     name: "em desenvolvimento",
+    //     image: "image/emDesenvolvimento.jpg",
+    //     techs: [
+    //         {   
+    //             idSvg: 4,
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
+    //         {
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
+    //         {
+    //             svg: "svg/emDesenvolvimento.svg"
+    //         },
 
-        ],
-        repository: "#",
-        deploy: "#"
-    },
+    //     ],
+    //     repository: "#",
+    //     deploy: "#"
+    // },
 
 ]
