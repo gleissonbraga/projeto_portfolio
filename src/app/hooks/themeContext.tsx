@@ -1,7 +1,6 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { useTranslation } from 'react-i18next';
 
 interface ThemeContextType {
   theme: string;
@@ -30,13 +29,17 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [language, setLanguege] = useState("pt")
   const [isDropDownOpen, setIsDropDownOpen] = useState(false)
   const [isDropLanguage, setIsDropLanguage] = useState(false)
-    const { t, i18n } = useTranslation();
+  // const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light"
-    setTheme(savedTheme)
-    document.documentElement.classList.toggle("dark", savedTheme === "dark")
-  }, [])
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+    document.documentElement.classList.toggle("dark", savedTheme === "dark");
+
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
   const toggleTheme = (newTheme: string) => {
     setTheme(newTheme)
@@ -47,6 +50,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   const toggleDropLang = (newLang: string) => {
     setLanguege(newLang)
+    // i18n.changeLanguage(newLang)
     setIsDropLanguage(false)
   }
 

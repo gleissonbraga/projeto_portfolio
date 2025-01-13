@@ -22,11 +22,15 @@ export function About(){
 
              <Title title={newTitle} />
 
-             <div  className=" w-[84%] 
+             <div  className={`
+             ${theme === 'dark' ? 'bg-[#292626]' : ""}
+               
+             w-[84%] 
              h-[580px] 
              flex 
              mt-5 
-             rounded-3xl" 
+             rounded-3xl`} 
+            
              style={{boxShadow: "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px"}}
              >
                <div className={`

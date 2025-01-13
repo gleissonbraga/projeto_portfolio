@@ -8,8 +8,6 @@ import { useTheme } from "../../hooks/themeContext";
 export function Menu() {
     const { theme, isDropDownOpen, toggleTheme, toggleDropDown, toggleLanguage, isDropLanguage, language, toggleDropLang} = useTheme();
 
-
-
     return (
         <>
             <header className={`
@@ -63,7 +61,7 @@ export function Menu() {
                             hover:underline-offset-4 
                             hover:opacity-85`}
                     >
-                        Início t('welcome')
+                        Início
                     </Link>
                     <Link
                         href="#about-me"
@@ -140,8 +138,6 @@ export function Menu() {
                 flex 
                 gap-3 
                 items-center">
-                    {/* <Image src="svg/brasil.svg" alt="Icon" width={24} height={24} className="rounded-full border-solid border p-[0.4rem] border-[#B0AEAE] w-8 h-8"/> */}
-
                     <button onClick={toggleLanguage}>
                         <Image src={language === 'pt' ? "svg/brasil.svg" : "svg/unitedStates.svg"}  
                             alt="Icon" 
@@ -180,9 +176,9 @@ export function Menu() {
                              items-center
                              `}>
                                                                 
-                                <button onClick={() => toggleDropLang(language === 'en' ? 'pt' : 'en')} className={`
-                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert "}
-                                    ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                <button onClick={() => toggleDropLang(language === 'pt' ? 'en' : 'pt')} className={`
+                                    ${theme === 'light' ? "hover:bg-[#F4F4F5] " : ""}
+                                    ${theme === 'dark' ? "text-white hover:bg-[#CCCCCC]" : ""}
                                     p-2
                                     rounded-xl
                                     text-black
@@ -197,8 +193,8 @@ export function Menu() {
                                     pt-br
                                 </button>
                                 <button onClick={() => toggleDropLang(language === 'pt' ? 'en' : 'pt')} className={`
-                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert  "}
-                                    ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
+                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : ""}
+                                    ${theme === 'dark' ? " hover:bg-[#CCCCCC] text-white" : ""}
                                     p-2
                                     rounded-xl
                                     text-black

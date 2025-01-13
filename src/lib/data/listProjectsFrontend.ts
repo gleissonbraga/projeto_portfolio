@@ -19,7 +19,7 @@ export const projectsFrontend = [
             },
 
         ],
-        repository: "#",
+        repository: "https://github.com/gleissonbraga/projeto_calculadoraJS",
         deploy: "#"
     },
     {

@@ -49,8 +49,8 @@ const Projects: React.FC = () => {
         
         
         <section id="projects" className={`
-        ${ theme === "light" ? "bg-[#FFFFFF]" : "bg-[#292626]"}
-        ${ theme === 'dark' ? "bg-[#292626]" : "bg-[#FFFFFF]"}
+        ${ theme === "light" ? "bg-[#FFFFFF]" : "bg-[#1d1d1d]"}
+        ${ theme === 'dark' ? "bg-[#1d1d1d]" : "bg-[#FFFFFF]"}
         min-h-[43rem] 
         pt-14 
         relative 

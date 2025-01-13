@@ -13,7 +13,7 @@ export function Skills(){
     return (
         <section id="skill" className={`
         ${ theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-[#292626]"}
-        ${ theme === 'dark' ? "bg-[#292626] text-[#fffffff]" : "bg-[#FFFFFF]"}
+        ${ theme === 'dark' ? "bg-[#1d1d1d] text-[#fffffff]" : "bg-[#FFFFFF]"}
         pt-14 
         flex 
         items-center 
