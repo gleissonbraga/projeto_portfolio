@@ -3,11 +3,13 @@
 import Image from "next/image"
 import Title from "../title/title"
 import { useTheme } from "../../hooks/themeContext";
+import { useTranslation } from "react-i18next";
 
 export function About(){
    const {theme} = useTheme()
+   const { t } = useTranslation()
 
-   const newTitle = "sobre mim"
+   const newTitle = t('about.title')
 
    return (
         <section id="about-me" className={`
@@ -15,7 +17,8 @@ export function About(){
          ${theme === 'dark' ? "bg-[#1D1D1D]" : " bg-white"}
         w-[100%] 
         flex 
-        pt-14 
+        pt-14
+        pb-6 
         flex-col 
         items-center`}
          >
@@ -24,12 +27,12 @@ export function About(){
 
              <div  className={`
              ${theme === 'dark' ? 'bg-[#292626]' : ""}
-               
              w-[84%] 
              h-[580px] 
              flex 
              mt-5 
-             rounded-3xl`} 
+             rounded-3xl
+             flex-wrap`} 
             
              style={{boxShadow: "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px"}}
              >
@@ -41,7 +44,8 @@ export function About(){
                   flex flex-col 
                   p-4 
                   items-center 
-                  justify-evenly `} 
+                  justify-evenly
+                  `} 
                   >
                      <h3 className="u
                      ppercase 
@@ -58,7 +62,10 @@ export function About(){
                      w-[80%] 
                      text-[18px]`}
                      >
-                        Sou natural de Viamão - RS ao lado de Porto Alegre. Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Unisenac, cursando 4° semestre. Atualmente procuro realizar a transição de carreira e busco como meta ser um Desenvolvedor Fullstack. Hoje além da faculdade me esforço ao máximo para estudar nas horas vagas e desenvolver projetos para fixação. Atualmente possuo expência e projetos em algumas tecnologias como <span className="font-bold">Python, NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, Versionamento Git e GitHub</span>.
+                        {t('about.me')} 
+                        <span className="font-bold">
+                        {t('about.me-techs')} 
+                        </span>.
                      </p>
                      <a 
                         href="curriculo/curriculo.pdf" 
@@ -82,7 +89,7 @@ export function About(){
                         hover:border-4
                         `}
                         >
-                           Currículo
+                           {t('about.curriculum')}
                         <Image src="svg/download.svg" alt="Icon" width={18} height={18} className=""/>
                      </a>
                </div>

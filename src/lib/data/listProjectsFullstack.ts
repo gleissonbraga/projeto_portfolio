@@ -10,10 +10,12 @@ export const projectsFullstack = [
                 idSvg: 1,
                 svg: "svg/emDesenvolvimento.svg"
             },
-            {
+            {   
+                idSvg: 2,
                 svg: "svg/emDesenvolvimento.svg"
             },
-            {
+            {   
+                idSvg: 3,
                 svg: "svg/emDesenvolvimento.svg"
             },
 
@@ -27,13 +29,15 @@ export const projectsFullstack = [
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
+                idSvg: 1,
+                svg: "svg/emDesenvolvimento.svg"
+            },
+            {   
                 idSvg: 2,
                 svg: "svg/emDesenvolvimento.svg"
             },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
+            {   
+                idSvg: 3,
                 svg: "svg/emDesenvolvimento.svg"
             },
 
@@ -47,13 +51,15 @@ export const projectsFullstack = [
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
+                idSvg: 1,
+                svg: "svg/emDesenvolvimento.svg"
+            },
+            {   
+                idSvg: 2,
+                svg: "svg/emDesenvolvimento.svg"
+            },
+            {   
                 idSvg: 3,
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
-                svg: "svg/emDesenvolvimento.svg"
-            },
-            {
                 svg: "svg/emDesenvolvimento.svg"
             },
 

@@ -3,10 +3,16 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useTheme } from "../../hooks/themeContext";
+import { useLanguage } from "../../hooks/I18nextContext";
+import { useTranslation } from "react-i18next";
 
 
 export function Menu() {
-    const { theme, isDropDownOpen, toggleTheme, toggleDropDown, toggleLanguage, isDropLanguage, language, toggleDropLang} = useTheme();
+    const { theme, isDropDownOpen, toggleTheme, toggleDropDown} = useTheme();
+
+    const { currentLanguage, isDropLanguage, toggleDropLang, toggleLanguage } = useLanguage()
+
+    const { t } = useTranslation()
 
     return (
         <>
@@ -61,7 +67,7 @@ export function Menu() {
                             hover:underline-offset-4 
                             hover:opacity-85`}
                     >
-                        Início
+                        {t('nav.home')}
                     </Link>
                     <Link
                         href="#about-me"
@@ -73,7 +79,7 @@ export function Menu() {
                              hover:underline-offset-4 
                              hover:opacity-85`}
                     >
-                        Sobre
+                        {t('nav.about')}
                     </Link>
                     <Link
                         href="#skill"
@@ -85,7 +91,7 @@ export function Menu() {
                              hover:underline-offset-4 
                              hover:opacity-85`}
                     >
-                        Habilidade
+                        {t('nav.skills')}
                     </Link>
                     <Link
                         href="#projects"
@@ -97,7 +103,7 @@ export function Menu() {
                              hover:underline-offset-4 
                              hover:opacity-85`}
                     >
-                        Projetos
+                        {t('nav.projects')}
                     </Link>
                 </nav>
                 <div className="flex gap-4 tracking-wider">
@@ -138,12 +144,13 @@ export function Menu() {
                 flex 
                 gap-3 
                 items-center">
-                    <button onClick={toggleLanguage}>
-                        <Image src={language === 'pt' ? "svg/brasil.svg" : "svg/unitedStates.svg"}  
+                    <button onClick={toggleDropLang}>
+                        <Image src={currentLanguage === 'pt' ? "svg/brasil.svg" : "svg/unitedStates.svg"}  
                             alt="Icon" 
                             width={24} 
                             height={24} 
                             className={`
+                                ${theme === 'dark' ? "border-[#b0aeae64]" : "border-[#B0AEAE] "}
                                 hover:scale-[1.1]
                                 duration-500
                                 trasition
@@ -151,7 +158,7 @@ export function Menu() {
                                 border-solid 
                                 border 
                                 p-[0.4rem] 
-                                border-[#B0AEAE] 
+                                
                                 w-8 
                                 h-8
                                 `} 
@@ -176,9 +183,9 @@ export function Menu() {
                              items-center
                              `}>
                                                                 
-                                <button onClick={() => toggleDropLang(language === 'pt' ? 'en' : 'pt')} className={`
-                                    ${theme === 'light' ? "hover:bg-[#F4F4F5] " : ""}
-                                    ${theme === 'dark' ? "text-white hover:bg-[#CCCCCC]" : ""}
+                                <button onClick={() => toggleLanguage(currentLanguage === 'pt' ? 'pt' : 'pt')} className={`
+                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "hover:bg-[#393536]"}
+                                    ${theme === 'dark' ? " hover:bg-[#393536] text-white" : "hover:bg-[#F4F4F5]"}
                                     p-2
                                     rounded-xl
                                     text-black
@@ -192,9 +199,9 @@ export function Menu() {
                                     <img src="svg/brasil.svg" alt="" className="w-4"/>
                                     pt-br
                                 </button>
-                                <button onClick={() => toggleDropLang(language === 'pt' ? 'en' : 'pt')} className={`
-                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : ""}
-                                    ${theme === 'dark' ? " hover:bg-[#CCCCCC] text-white" : ""}
+                                <button onClick={() => toggleLanguage(currentLanguage === 'pt' ? 'en' : 'en')} className={`
+                                    ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "hover:bg-[#393536] "}
+                                    ${theme === 'dark' ? " hover:bg-[#393536] text-white" : "hover:bg-[#F4F4F5]"}
                                     p-2
                                     rounded-xl
                                     text-black
@@ -257,7 +264,7 @@ export function Menu() {
                          items-center
                          `}>
                                                             
-                            <button onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} disabled={theme === 'light'} className={`
+                            <button onClick={() => toggleTheme(theme === "light" ? "light" : "light")}  className={`
                                 ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert "}
                                 ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
                                 p-2
@@ -269,9 +276,9 @@ export function Menu() {
                                 items-center 
                                 gap-2`}>
                                 <img src="svg/sol.svg" alt="" className="w-4"/>
-                                Claro
+                                {t('nav.light')}
                             </button>
-                            <button onClick={() => toggleTheme(theme === "light" ? "dark" : "light")} disabled={theme === 'dark'} className={`
+                            <button onClick={() => toggleTheme(theme === "light" ? "dark" : "dark")}  className={`
                                 ${theme === 'light' ? "hover:bg-[#F4F4F5]" : "filter invert  "}
                                 ${theme === 'dark' ? "filter invert hover:bg-[#CCCCCC]" : ""}
                                 p-2
@@ -284,7 +291,7 @@ export function Menu() {
                                 items-center 
                                 gap-2`}>
                                 <img src="svg/lua.svg" alt="" className="w-4"/>
-                                Escuro
+                                {t('nav.dark')}
                             </button>
                         </div>
                     )}

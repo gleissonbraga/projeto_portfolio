@@ -4,13 +4,9 @@ import { createContext, useContext, useState, useEffect, ReactNode } from "react
 
 interface ThemeContextType {
   theme: string;
-  language: string;
   isDropDownOpen: boolean;
-  isDropLanguage: boolean;
   toggleTheme: (newTheme: string) => void;
   toggleDropDown: () => void;
-  toggleLanguage: () => void;
-  toggleDropLang: (newLang: string) => void;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
@@ -18,18 +14,12 @@ const ThemeContext = createContext<ThemeContextType>({
   isDropDownOpen: false,
   toggleTheme: (newTheme: string) => {},
   toggleDropDown: () => {},
-  language: 'pt',
-  toggleDropLang: (newLang: string) => {},
-  isDropLanguage: false,
-  toggleLanguage: () => {}
 });
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState("light");
-  const [language, setLanguege] = useState("pt")
   const [isDropDownOpen, setIsDropDownOpen] = useState(false)
-  const [isDropLanguage, setIsDropLanguage] = useState(false)
-  // const { t, i18n } = useTranslation();
+
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
@@ -48,24 +38,13 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     setIsDropDownOpen(false)
   }
 
-  const toggleDropLang = (newLang: string) => {
-    setLanguege(newLang)
-    // i18n.changeLanguage(newLang)
-    setIsDropLanguage(false)
-  }
-
   const toggleDropDown = () => {
     setIsDropDownOpen(!isDropDownOpen)
-    setIsDropLanguage(false)
   }
 
-  const toggleLanguage = () => {
-      setIsDropLanguage(!isDropLanguage)
-      setIsDropDownOpen(false)
-  }
 
   return (
-    <ThemeContext.Provider value={{ theme, isDropDownOpen, toggleTheme, toggleDropDown, isDropLanguage, toggleLanguage, toggleDropLang, language }}>
+    <ThemeContext.Provider value={{ theme, isDropDownOpen, toggleTheme, toggleDropDown}}>
       {children}
     </ThemeContext.Provider>
   );

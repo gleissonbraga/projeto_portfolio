@@ -11,10 +11,12 @@ export const projectsFrontend = [
                 idSvg: 1,
                 svg: "svg/html5.svg"
             },
-            {
+            {   
+                idSvg: 2,
                 svg: "svg/css3.svg"
             },
-            {
+            {   
+                idSvg: 3,
                 svg: "svg/javascript.svg"
             },
 
@@ -28,13 +30,15 @@ export const projectsFrontend = [
         image: "image/gestao_estoque_react.jpeg",
         techs: [
             {   
-                idSvg: 2,
+                idSvg: 1,
                 svg: "svg/html5.svg"
             },
-            {
+            {   
+                idSvg: 2,
                 svg: "svg/css3.svg"
             },
-            {
+            {   
+                idSvg: 3,
                 svg: "svg/react.svg"
             },
 

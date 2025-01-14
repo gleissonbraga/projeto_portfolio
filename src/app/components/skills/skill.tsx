@@ -3,16 +3,19 @@
 import { skillList } from "@/lib"
 import Title from "../title/title"
 import { useTheme } from "../../hooks/themeContext";
+import { useTranslation } from "react-i18next";
+import { useTransition } from "react";
 
 
 export function Skills(){
     const {theme} = useTheme()
+    const { t } = useTranslation()
 
-    const newTitle = "Habilidades"
+    const newTitle = t('skillsLanguage.title')
 
     return (
         <section id="skill" className={`
-        ${ theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-[#292626]"}
+        ${ theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-[#1d1d1d]"}
         ${ theme === 'dark' ? "bg-[#1d1d1d] text-[#fffffff]" : "bg-[#FFFFFF]"}
         pt-14 
         flex 

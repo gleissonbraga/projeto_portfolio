@@ -3,6 +3,7 @@
 import { useTheme } from "../../hooks/themeContext";
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslation } from "react-i18next";
 
 
 // export default function HomePage(){
@@ -19,6 +20,8 @@ import Link from "next/link"
 
 export default function HomePage() {
     const {theme} = useTheme()
+
+        const { t } = useTranslation()
 
 
     return (
@@ -43,15 +46,15 @@ export default function HomePage() {
                 font-extrabold 
                 text-stroke`}
                 >
-                    Desenvolvedor Full Stack
+                    {t('main.work')}
                 </h1>
-                <p className="text-[32px] text-[#ffffff] font-light">Olá, eu sou Gleisson Braga</p>
+                <p className="text-[32px] text-[#ffffff] font-light">
+                    {t('main.me')}
+                </p>
                 <a href="https://wa.me/5551999303193?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"
                  className={`
                 ${theme === 'light' ? "text-[#F5080C]" : "text-[#546aab]"}
-                ${theme === 'dark' ? "text-[#546aab]" : "text-[#F5080C]"}
-                
-                      
+                ${theme === 'dark' ? "text-[#546aab]" : "text-[#F5080C]"}   
                  bg-white 
                  w-[180px] 
                  h-[54] 
@@ -69,7 +72,7 @@ export default function HomePage() {
                  duration-500 
                  ease-in-out`}
                  >
-                    Contato 
+                    {t('main.contact')} 
                     <Image src={theme === 'light' ? "svg/telefone.svg" : "svg/telefone-dark.svg"} alt="Icon" width={18} height={18}/></a>
                     <div>
             </div>

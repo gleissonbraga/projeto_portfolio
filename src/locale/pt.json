@@ -1,0 +1,47 @@
+{
+    "translation": {
+        "nav": {
+            "home": "início",
+            "about": "sobre",
+            "skills": "habilidade",
+            "projects": "projetos",
+            "light": "Claro",
+            "dark": "Escuro"
+        },
+        "main": {
+            "work": "desenvolvedor fullstack",
+            "me": "Olá, eu sou Gleisson Braga",
+            "contact": "Contato"
+        },
+       "about": {
+            "title": "Sobre",
+            "me": "Sou natural de Viamão - RS ao lado de Porto Alegre. Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Unisenac, cursando 4° semestre. Atualmente procuro realizar a transição de carreira e busco como meta ser um Desenvolvedor Fullstack. Hoje além da faculdade me esforço ao máximo para estudar nas horas vagas e desenvolver projetos para fixação. Atualmente possuo expência e projetos em algumas tecnologias como ",
+            "me-techs": "Python, NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, Versionamento Git e GitHub",
+            "curriculum": "Currículo"
+       },
+        "skillsLanguage": {
+            "title": "habilidades"
+        },
+
+        "projects": {
+            "frontend": {
+                "title-one": "calculadora",
+                "title-two": "gestão de estoque"
+            },
+            "backend": {
+                "title-one": "em desenvolvimento",
+                "title-two": "em desenvolvimento",
+                "title-three": "em desenvolvimento",
+                "title-four": "em desenvolvimento"
+            },
+            "fullstack": {
+                "title-one": "em desenvolvimento",
+                "title-two": "em desenvolvimento",
+                "title-three": "em desenvolvimento"
+            }
+        },
+
+        "footerEnd": "Desenvolvido por Gleisson Braga."
+        
+    }
+}
