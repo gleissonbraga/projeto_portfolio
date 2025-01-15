@@ -4,8 +4,6 @@ import { skillList } from "@/lib"
 import Title from "../title/title"
 import { useTheme } from "../../hooks/themeContext";
 import { useTranslation } from "react-i18next";
-import { useTransition } from "react";
-
 
 export function Skills(){
     const {theme} = useTheme()

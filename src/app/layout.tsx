@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Red_Hat_Mono } from "next/font/google";
+import { Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../app/hooks/themeContext";
 import { LanguageProvider } from "../app/hooks/I18nextContext";
@@ -11,11 +11,6 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const redHatMono = Red_Hat_Mono({
-  variable: "--font-hat-mono",
   subsets: ["latin"],
 });
 
