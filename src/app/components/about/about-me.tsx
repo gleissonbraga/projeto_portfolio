@@ -89,7 +89,7 @@ export function About(){
                            : 
                            "bg-[#D62828]  text-white  hover:text-black  hover:bg-white hover:border-[#D62828]" }
                         w-[180px] 
-                        h-[54] 
+                        h-[54px] 
                         text-[18px] 
                         rounded-3xl 
                         flex items-center 
@@ -99,7 +99,7 @@ export function About(){
                         font-poppins  
                         hover:border-4
                         min-[320px]:mt-4
-                        2xl:h-[64]
+                        2xl:h-[64px]
                         
                         `}
                         >
