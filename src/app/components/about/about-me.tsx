@@ -20,7 +20,8 @@ export function About(){
         pt-14
         pb-6 
         flex-col 
-        items-center`}
+        items-center
+        `}
          >
 
              <Title title={newTitle} />
@@ -28,11 +29,18 @@ export function About(){
              <div  className={`
              ${theme === 'dark' ? 'bg-[#292626]' : ""}
              w-[84%] 
-             h-[580px] 
-             flex 
+             min-h-[580px] 
+             flex
              mt-5 
              rounded-3xl
-             flex-wrap`} 
+             flex-wrap
+             min-[320px]:w-full
+             min-[320px]:flex-col-reverse
+             sm:w-[84%]
+             sm:items-center
+             lg:flex-row
+             lg:w-[84%s]
+             `} 
             
              style={{boxShadow: "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px"}}
              >
@@ -40,11 +48,14 @@ export function About(){
                   ${theme === 'light' ? "text-[#000000] " : "text-[#ffffff] "}
                   ${theme === 'dark' ? "text-[#ffffff] " : "text-[#000000] " }
                   w-[52%] 
-                  h-[500px] 
-                  flex flex-col 
+                  min-h-[500px] 
+                  flex 
+                  flex-col 
                   p-4 
                   items-center 
                   justify-evenly
+                  min-[320px]:w-full
+                  lg:w-[52%]
                   `} 
                   >
                      <h3 className="u
@@ -87,6 +98,8 @@ export function About(){
                         font-extrabold 
                         font-poppins  
                         hover:border-4
+                        min-[320px]:mt-4
+                        
                         `}
                         >
                            {t('about.curriculum')}
@@ -100,18 +113,34 @@ export function About(){
                h-[500px] 
                flex 
                justify-center 
-               align-middle"
+               align-middle
+               min-[320px]:w-full
+               min-[320px]:h-[300px]
+               sm:w-[80%]
+               sm:h-[500px]
+               sm:items-center
+               sm-justify-center
+               lg:w-[48%]
+               "
                >
                         <Image src={theme === 'light' ? "svg/bg-gray-dois.svg" : "svg/bg-gray-dark.svg"} 
                            alt="Icon" 
                            width={650} 
                            height={650} 
-                           className="absolute"/>
+                           className="
+                           absolute
+                           min-[320px]:hidden
+                           sm:block
+                           "/>
                         <Image src={theme === 'dark' ? "svg/bg-blue-dark.svg" : "svg/bg-red-quatro.svg"} 
                            alt="Icon" 
                            width={650} 
                            height={650} 
-                           className="absolute"/>
+                           className="
+                           absolute
+                           min-[320px]:hidden
+                           sm:block
+                           "/>
             
                         <img
                            src="image/gleisson2.png"
@@ -121,7 +150,15 @@ export function About(){
                            w-[400px] 
                            h-[500px] 
                            rounded-b-full 
-                           text-center"
+                           min-[320px]:w-[250px]
+                           min-[320px]:h-[300px]
+                           sm:w-[80%] 
+                           sm:h-[500px]
+                           md:w-[70%]
+                           md:h-[400px]
+                           lg:w-[400px]
+                           lg:h-[500px]
+                           "
                         />
                 </div>
               

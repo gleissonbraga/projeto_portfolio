@@ -3,7 +3,7 @@
 export const projectsFullstack = [
     {   
         id: 1,
-        name: "em desenvolvimento",
+        name: "projects.fullstack.title-one",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
@@ -25,7 +25,7 @@ export const projectsFullstack = [
     },
     {
         id: 2,
-        name: "em desenvolvimento",
+        name: "projects.fullstack.title-two",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
@@ -47,7 +47,7 @@ export const projectsFullstack = [
     },
     {
         id: 3,
-        name: "em desenvolvimento",
+        name: "projects.fullstack.title-three",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   

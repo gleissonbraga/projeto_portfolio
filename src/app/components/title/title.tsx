@@ -9,11 +9,14 @@ interface TitleProperty{
 export default function Title({title}: TitleProperty) {
     const {theme} = useTheme()
     return (
-        <div className="text-center 
-        h-16 w-[70%] 
+        <div className="
+        text-center 
+        h-16 
+        w-[70%] 
         border-b-2 
         border-[#666464] 
-        rounded-sm" 
+        rounded-sm
+        " 
         style={{ boxShadow: "0px 10px 10px -12px rgba(0, 0, 0, 0.45)" }} >
             <h2 className={`
             ${theme === 'light' ? "text-[#000000] " : "text-[#ffffff] "}
@@ -22,7 +25,9 @@ export default function Title({title}: TitleProperty) {
             uppercase 
             font-poppins 
             text-5xl 
-            tracking-wider`}
+            tracking-wider
+            min-[320px]:text-[28px]
+            sm:text-5xl`}
             >
                 <span className={`
                     ${theme === 'light' ? "text-[#D62828]" : "text-[#546aab] "}

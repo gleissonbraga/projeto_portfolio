@@ -31,7 +31,14 @@ export function Skills(){
                     flex-wrap 
                     flex 
                     p-8
-                    gap-14`}
+                    gap-14
+                    min-[320px]:gap-4
+                    min-[320px]:justify-center
+                    min-[320px]:w-full
+                    md:justify-normal
+                    md:gap-14
+                    md:w-[90%]
+                    `}
                     
                 >
                 {skillList.map((skill) => (

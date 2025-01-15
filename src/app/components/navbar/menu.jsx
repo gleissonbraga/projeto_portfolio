@@ -34,6 +34,7 @@ export function Menu() {
                 w-[96%]
                 rounded-full
                 z-50
+
             `}>
                 <div className="">
                     <Link href="/" className="text-xl font-bold uppercase font-poppins tracking-wider pr-1">
@@ -158,7 +159,6 @@ export function Menu() {
                                 border-solid 
                                 border 
                                 p-[0.4rem] 
-                                
                                 w-8 
                                 h-8
                                 `} 

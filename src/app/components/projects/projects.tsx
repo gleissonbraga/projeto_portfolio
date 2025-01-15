@@ -6,6 +6,7 @@ import Title from "../title/title"
 import "./style.css"
 import Image from "next/image"
 import { useTheme } from "../../hooks/themeContext";
+import { useTranslation } from "react-i18next"
 
 
 
@@ -14,6 +15,7 @@ import { useTheme } from "../../hooks/themeContext";
 const Projects: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'frontend' | 'backend' | 'fullstack'>('frontend')
     const {theme} = useTheme()
+    const { t } = useTranslation()
     
     const wordTitle = activeTab.charAt(0).toUpperCase() + activeTab.slice(1)
 
@@ -62,9 +64,7 @@ const Projects: React.FC = () => {
 
             <Title title={wordTitle} />
 
-            <div className={`
-            w-[8rem] 
-            absolute 
+            <div className={` 
             top-60 
             left-4 
             rounded-b-lg 
@@ -72,27 +72,52 @@ const Projects: React.FC = () => {
             flex-col 
             items-center 
             justify-center 
-            font-[500]`}
+            font-[500]
+            mt-6
+            p-4`}
            >
                 <div className="
                 flex 
-                flex-col 
                 justify-center 
                 items-center 
-                gap-8">
+                gap-8
+                ">
                     <button className={buttonStyles('frontend')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('frontend')}>{buttonText('frontend')}</button>
                     <button className={buttonStyles('backend')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('backend')}>{buttonText('backend')}</button>
                     <button className={buttonStyles('fullstack')} style={{boxShadow: "rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px"}} onClick={() => setActiveTab('fullstack')}>{buttonText('fullstack')}</button>
                 </div>
             </div>
-            <div className=" w-full min-h-[500px]  mt-5 flex justify-end ">
-                <div className=" w-[90%] h-[auto] flex gap-10 flex-wrap justify-center p-5  ">
+            <div className=" 
+            w-full 
+            min-h-[500px]  
+            mt-5 flex 
+            justify-center ">
+                <div className="
+                 w-[90%] 
+                 h-[auto] 
+                 flex 
+                 gap-10 
+                 flex-wrap 
+                 justify-center 
+                 p-5 
+                 lg:w-full
+                 xl:w-[90%]
+                 ">
                     {projects[activeTab].map((project) => (
                         <div key={project.id} className="
                         w-[520px] 
                         h-[200px]
                         flex 
                         gap-4
+                        min-[320px]:flex-col-reverse
+                        min-[320px]:h-auto
+                        min-[320px]:w-full
+                        min-[430px]:w-[320px]
+                        sm:w-[300px]
+                        lg:w-[490px]
+                        lg:flex-row
+                        lg:h-[200px]
+                        xl:w-[520px]
                         "
                         >
                             <div className={`
@@ -103,10 +128,13 @@ const Projects: React.FC = () => {
                             justify-center 
                             items-center 
                             flex-col 
-                            gap-5 `}
+                            gap-5 
+                            min-[320px]:w-full
+                            lg:w-[50%]
+                            `}
                           
                             >
-                                <h4 className="uppercase font-bold">{project.name}</h4>
+                                <h4 className="uppercase font-bold">{t(project.name)}</h4>
                                 <div className="text-center">
                                     <span className=" text-center font-semibold">Techs</span>
                                         <div className="flex flex-wrap gap-2 mt-6">
@@ -161,11 +189,21 @@ const Projects: React.FC = () => {
                                     /></a>
                                 </div>
                             </div>
-                            <div className="w-[44%] rounded-3xl">
+                            <div className="
+                            w-[44%] 
+                            rounded-3xl
+                            min-[320px]:w-[100%]
+                            min-[320px]:flex
+                            min-[320px]:items-center
+                            min-[320px]:justify-center 
+                            lg:w-[44%]
+                            ">
                                 <img src={project.image} alt="" className={`
                                 rounded-3xl 
                                 w-full 
-                                h-full`}
+                                h-full
+                                
+                                `}
                                  
                                 />
                             </div>

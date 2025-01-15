@@ -1,9 +1,8 @@
 
-
 export const projectsBackend = [
     {   
         id: 1,
-        name: "Em desenvolvimento",
+        name: "projects.backend.title-one",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
@@ -25,7 +24,7 @@ export const projectsBackend = [
     },
     {
         id: 2,
-        name: "Em desenvolvimento",
+        name: "projects.backend.title-two",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
@@ -47,7 +46,7 @@ export const projectsBackend = [
     },
     {
         id: 3,
-        name: "Em desenvolvimento",
+        name: "projects.backend.title-three",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
@@ -69,7 +68,7 @@ export const projectsBackend = [
     },
     {
         id: 4,
-        name: "Em desenvolvimento",
+        name: "projects.backend.title-four",
         image: "image/emDesenvolvimento.jpg",
         techs: [
             {   
