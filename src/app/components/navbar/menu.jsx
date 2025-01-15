@@ -5,9 +5,11 @@ import Link from "next/link"
 import { useTheme } from "../../hooks/themeContext";
 import { useLanguage } from "../../hooks/I18nextContext";
 import { useTranslation } from "react-i18next";
+import { Hamburguer } from "./components";
 
 
 export function Menu() {
+
     const { theme, isDropDownOpen, toggleTheme, toggleDropDown} = useTheme();
 
     const { currentLanguage, isDropLanguage, toggleDropLang, toggleLanguage } = useLanguage()
@@ -16,6 +18,8 @@ export function Menu() {
 
     return (
         <>  
+
+            <Hamburguer />
             <header className={`
                 font-poppins 
                 h-[3.31rem] 
