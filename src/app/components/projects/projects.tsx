@@ -161,11 +161,10 @@ const Projects: React.FC = () => {
                                     duration-500 
                                     `}
                                     
-                                     style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"}} target="_blank" >Github <img src="svg/github-black.svg" alt="" className={`
+                                     style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"}} target="_blank" >Github <Image src="svg/github-black.svg" width={20} height={20}  alt="" className={`
                                         ${theme === 'light' ? "" : "filter invert"}
                                         ${theme === 'dark' ? "filter invert" : ""}
-                                        w-6 
-                                        h-6`}/>
+                                        `}/>
                                     </a>
                                     <a href={project.deploy} className={`
                                     ${theme === 'light' ? "hover:text-[#d82626]" : "hover:text-[#546aab]  bg-[#333333]"}
@@ -180,11 +179,10 @@ const Projects: React.FC = () => {
                                     hover:scale-[1.06] 
                                     transition-transform 
                                     duration-500 
-                                    `} style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"}} target="_blank" >Deploy <img src="svg/deploy.svg" alt="" className={`
+                                    `} style={{ boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px"}} target="_blank" >Deploy <Image src="svg/deploy.svg" width={20} height={20} alt="" className={`
                                     ${theme === 'light' ? "" : "filter invert"}
                                     ${theme === 'dark' ? "filter invert" : ""}
-                                    w-6 
-                                    h-6`}
+                                    `}
                                    
                                     /></a>
                                 </div>
@@ -198,7 +196,7 @@ const Projects: React.FC = () => {
                             min-[320px]:justify-center 
                             lg:w-[44%]
                             ">
-                                <img src={project.image} alt="" className={`
+                                <Image src={project.image} alt="" width={400} height={400   } className={`
                                 rounded-3xl 
                                 w-full 
                                 h-full

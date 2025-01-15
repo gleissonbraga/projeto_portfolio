@@ -4,7 +4,7 @@ export const projectsFullstack = [
     {   
         id: 1,
         name: "projects.fullstack.title-one",
-        image: "image/emDesenvolvimento.jpg",
+        image: "/image/emDesenvolvimento.jpg",
         techs: [
             {   
                 idSvg: 1,
@@ -26,7 +26,7 @@ export const projectsFullstack = [
     {
         id: 2,
         name: "projects.fullstack.title-two",
-        image: "image/emDesenvolvimento.jpg",
+        image: "/image/emDesenvolvimento.jpg",
         techs: [
             {   
                 idSvg: 1,
@@ -48,7 +48,7 @@ export const projectsFullstack = [
     {
         id: 3,
         name: "projects.fullstack.title-three",
-        image: "image/emDesenvolvimento.jpg",
+        image: "/image/emDesenvolvimento.jpg",
         techs: [
             {   
                 idSvg: 1,

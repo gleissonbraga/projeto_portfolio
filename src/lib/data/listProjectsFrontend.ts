@@ -5,7 +5,7 @@ export const projectsFrontend = [
     {   
         id: 1,
         name: "projects.frontend.title-one",
-        image: "image/calculadora.jpg",
+        image: "/image/calculadora.jpg",
         techs: [
             {   
                 idSvg: 1,
@@ -27,7 +27,7 @@ export const projectsFrontend = [
     {
         id: 2,
         name: "projects.frontend.title-two",
-        image: "image/gestao_estoque_react.jpeg",
+        image: "/image/gestao_estoque_react.jpeg",
         techs: [
             {   
                 idSvg: 1,

@@ -5,11 +5,18 @@ import { useTranslation } from "react-i18next"
 import '../../lib/data/i18n'
 
 interface LanguageContextType {
-   
+  currentLanguage: string,
+   isDropLanguage: boolean,
+   toggleLanguage: (newLang: string) => void,
+   toggleDropLang: () => void
+
 }
 
 const LanguageContext = createContext<LanguageContextType>({
-  
+  currentLanguage: "pt",
+  isDropLanguage: false,
+  toggleLanguage: (newLang: string) =>{},
+  toggleDropLang: () => {}
 });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {

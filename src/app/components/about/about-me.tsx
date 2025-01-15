@@ -142,9 +142,10 @@ export function About(){
                            sm:block
                            "/>
             
-                        <img
-                           src="image/gleisson2.png"
-                           alt="Gleisson"
+                        <Image src='/image/gleisson2.png'
+                           alt="Icon" 
+                           width={400} 
+                           height={500} 
                            className="
                            absolute 
                            w-[400px] 
@@ -158,8 +159,9 @@ export function About(){
                            md:h-[400px]
                            lg:w-[400px]
                            lg:h-[500px]
-                           "
-                        />
+                           "/>
+            
+                        
                 </div>
               
              </div>

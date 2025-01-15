@@ -242,7 +242,7 @@ export function Menu() {
                                     uppercase
                                     items-center 
                                     gap-2`}>
-                                    <img src="svg/brasil.svg" alt="" className="w-4"/>
+                                    <Image src="svg/brasil.svg" alt="" width={4} height={4} className="w-4"/>
                                     pt-br
                                 </button>
                                 <button onClick={() => toggleLanguage(currentLanguage === 'pt' ? 'en' : 'en')} className={`
@@ -258,7 +258,7 @@ export function Menu() {
                                     uppercase
                                     items-center 
                                     gap-2`}>
-                                    <img src="svg/unitedStates.svg" alt="" className="w-4"/>
+                                    <Image src="svg/unitedStates.svg" alt="" width={4} height={4} className="w-4"/>
                                     en-us
                                 </button>
                             </div>
@@ -322,7 +322,7 @@ export function Menu() {
                                 flex  
                                 items-center 
                                 gap-2`}>
-                                <img src="svg/sol.svg" alt="" className="w-4"/>
+                                <Image src="svg/sol.svg" alt="" width={4} height={4} className="w-4"/>
                                 {t('nav.light')}
                             </button>
                             <button onClick={() => toggleTheme(theme === "light" ? "dark" : "dark")}  className={`
@@ -337,7 +337,7 @@ export function Menu() {
                                 flex  
                                 items-center 
                                 gap-2`}>
-                                <img src="svg/lua.svg" alt="" className="w-4"/>
+                                <Image src="svg/lua.svg" alt="" width={4} height={4} className="w-4"/>
                                 {t('nav.dark')}
                             </button>
                         </div>

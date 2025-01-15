@@ -4,6 +4,7 @@ import { skillList } from "@/lib"
 import Title from "../title/title"
 import { useTheme } from "../../hooks/themeContext";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 export function Skills(){
     const {theme} = useTheme()
@@ -69,7 +70,7 @@ export function Skills(){
                          font-DM_Sans 
                          text-[1.2rem]`}
                         >{skill.name}</span>
-                        <img src={skill.image} alt="" className="
+                        <Image src={skill.image} width={14} height={14} alt="" className="
                         w-14 
                         h-14"
                          />
