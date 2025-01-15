@@ -32,9 +32,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const toggleTheme = (newTheme: string) => {
-    setTheme(newTheme)
-    localStorage.setItem("theme", newTheme)
-    document.documentElement.classList.toggle("dark", newTheme === "dark")
+    const newThemeProp = newTheme
+    setTheme(newThemeProp)
+    localStorage.setItem("theme", newThemeProp)
+    document.documentElement.classList.toggle("dark", newThemeProp === "dark")
     setIsDropDownOpen(false)
   }
 
