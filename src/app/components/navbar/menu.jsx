@@ -15,7 +15,7 @@ export function Menu() {
     const { t } = useTranslation()
 
     return (
-        <>
+        <>  
             <header className={`
                 font-poppins 
                 h-[3.31rem] 
@@ -34,10 +34,26 @@ export function Menu() {
                 w-[96%]
                 rounded-full
                 z-50
-
+                min-[320px]:hidden
+                md:flex
             `}>
-                <div className="">
-                    <Link href="/" className="text-xl font-bold uppercase font-poppins tracking-wider pr-1">
+                <div className="
+                md:w-44
+                lg:w-52
+                xl:w-80
+                ">
+                    <Link href="/" className="
+                    text-xl 
+                    font-bold 
+                    uppercase 
+                    font-poppins 
+                    tracking-wider 
+                    pr-1
+                    md:text-center
+                    md:text-sm
+                    lg:text-base
+                    xl:text-xl
+                    ">
                         <span className={`
                             ${theme === 'light' ? "text-[#D62828]" : "text-[#546aab] "}
                             ${theme === 'dark' ? "text-[#546aab] " : "text-[#D62828]" }
@@ -53,12 +69,23 @@ export function Menu() {
                             uppercase 
                             tracking-wider 
                             text-xl
+                            md:text-sm
+                            lg:text-base
+                            xl:text-xl
                         `}>
                             /&gt;
                         </span>
                     </Link>
                 </div>
-                <nav className="flex uppercase gap-[4rem] font-semibold" >
+                <nav className="
+                flex 
+                uppercase 
+                gap-[4rem] 
+                font-semibold
+                md:gap-4
+                lg:gap-10
+                xl:gap-[4rem]
+                " >
                     <Link
                         href="/"
                         className={` 
@@ -66,7 +93,11 @@ export function Menu() {
                            ${theme === 'dark' ? " hover:decoration-[#546aab]" : " hover:decoration-[#D62828] "}
                             hover:underline 
                             hover:underline-offset-4 
-                            hover:opacity-85`}
+                            hover:opacity-85
+                            md:text-[0.8rem]
+                            lg:text-[1rem]
+                            xl:text-lg
+                            `}
                     >
                         {t('nav.home')}
                     </Link>
@@ -78,7 +109,11 @@ export function Menu() {
 
                              hover:underline 
                              hover:underline-offset-4 
-                             hover:opacity-85`}
+                             hover:opacity-85
+                             md:text-[0.8rem]
+                             lg:text-[1rem]
+                             xl:text-lg
+                             `}
                     >
                         {t('nav.about')}
                     </Link>
@@ -90,7 +125,10 @@ export function Menu() {
 
                              hover:underline 
                              hover:underline-offset-4 
-                             hover:opacity-85`}
+                             hover:opacity-85
+                             md:text-[0.8rem]
+                             lg:text-[1rem]
+                             xl:text-lg`}
                     >
                         {t('nav.skills')}
                     </Link>
@@ -102,7 +140,11 @@ export function Menu() {
 
                              hover:underline 
                              hover:underline-offset-4 
-                             hover:opacity-85`}
+                             hover:opacity-85
+                             md:text-[0.8rem]
+                             lg:text-[1rem]
+                             xl:text-lg
+                             `}
                     >
                         {t('nav.projects')}
                     </Link>
@@ -117,7 +159,8 @@ export function Menu() {
                         delay-100 
                         transition-transform 
                         duration-300 
-                        ease-in-out`}/>
+                        ease-in-out
+                        `}/>
                     </a>
                     <a href="https://www.linkedin.com/in/gleisson-braga/" target="_blank">
                         <Image src="svg/linkedin.svg" alt="Icon" width={24} height={24} className={`
@@ -181,6 +224,9 @@ export function Menu() {
                              flex-col
                              justify-center
                              items-center
+                             md:right-16
+                             lg:right-20
+                             xl:right-28
                              `}>
                                                                 
                                 <button onClick={() => toggleLanguage(currentLanguage === 'pt' ? 'pt' : 'pt')} className={`
@@ -245,10 +291,8 @@ export function Menu() {
 
                     { isDropDownOpen && (
                         <div className={`
-                        
                         ${theme === 'light' ? " bg-white" : ""}
                         ${theme === 'dark' ? " bg-black" : ""}
-                        
                          absolute 
                          top-full 
                          right-20  
@@ -262,6 +306,9 @@ export function Menu() {
                          flex-col
                          justify-center
                          items-center
+                         md:right-8
+                         lg:right-10
+                         xl:right-16
                          `}>
                                                             
                             <button onClick={() => toggleTheme(theme === "light" ? "light" : "light")}  className={`
