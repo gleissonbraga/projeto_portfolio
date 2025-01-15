@@ -12,7 +12,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType>({
   theme: "light",
   isDropDownOpen: false,
-  toggleTheme: (newTheme: string) => {},
+  toggleTheme: () => {},
   toggleDropDown: () => {},
 });
 
@@ -32,10 +32,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const toggleTheme = (newTheme: string) => {
-    const newThemeProp = newTheme
-    setTheme(newThemeProp)
-    localStorage.setItem("theme", newThemeProp)
-    document.documentElement.classList.toggle("dark", newThemeProp === "dark")
+    setTheme(newTheme)
+    localStorage.setItem("theme", newTheme)
+    document.documentElement.classList.toggle("dark", newTheme === "dark")
     setIsDropDownOpen(false)
   }
 

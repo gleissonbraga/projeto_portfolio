@@ -15,7 +15,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType>({
   currentLanguage: "pt",
   isDropLanguage: false,
-  toggleLanguage: (newLang: string) => {},
+  toggleLanguage: () => {},
   toggleDropLang: () => {}
 });
 
@@ -40,9 +40,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }
 
   const toggleLanguage = (newLang: string) => {
-    const newLangProp = newLang
-    setCurrentLanguage(newLangProp)
-    changeLanguage(newLangProp)
+    setCurrentLanguage(newLang)
+    changeLanguage(newLang)
     setIsDropLanguage(false)
   }
 
