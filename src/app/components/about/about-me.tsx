@@ -99,6 +99,7 @@ export function About(){
                         font-poppins  
                         hover:border-4
                         min-[320px]:mt-4
+                        2xl:h-[64]
                         
                         `}
                         >
