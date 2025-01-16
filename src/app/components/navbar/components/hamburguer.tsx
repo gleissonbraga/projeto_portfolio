@@ -35,7 +35,7 @@ export function Hamburguer(){
                 p-4
                 fixed 
                 top-2 
-                right-[-20] 
+                right-[10] 
                 transform 
                 -translate-x-1/2 
                 rounded-full
