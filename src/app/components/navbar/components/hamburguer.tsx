@@ -51,8 +51,8 @@ export function Hamburguer(){
                     ${theme === "light" ? "bg-[#FFFFFF] text-[#000000] " : "bg-[#292626]"}
                     ${theme === 'dark' ? "bg-[#292626] text-[#fffffff]" : "bg-[#FFFFFF]"}
                     absolute
-                    top-[-6]
-                    right-[-16]
+                    top-[-6px]
+                    right-[-16px]
                     w-36
                     rounded-2xl
                     flex
