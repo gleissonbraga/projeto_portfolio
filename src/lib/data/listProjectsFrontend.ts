@@ -19,6 +19,10 @@ export const projectsFrontend = [
                 idSvg: 3,
                 svg: "svg/javascript.svg"
             },
+            {   
+                idSvg: 4,
+                svg: "svg/git.svg"
+            },
 
         ],
         repository: "https://github.com/gleissonbraga/projeto_calculadoraJS",
@@ -40,6 +44,10 @@ export const projectsFrontend = [
             {   
                 idSvg: 3,
                 svg: "svg/react.svg"
+            },
+            {   
+                idSvg: 4,
+                svg: "svg/git.svg"
             },
 
         ],

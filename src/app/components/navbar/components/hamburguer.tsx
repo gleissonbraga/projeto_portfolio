@@ -44,7 +44,7 @@ export function Hamburguer(){
                `}>
             <div className="relative z-50 flex items-center justify-center">
                 <button onClick={handleDrop} >
-                    <Image src="svg/menu-sharp.svg" alt="" width={20} height={20} className="relative z-50"></Image>
+                    <Image src="svg/menu-sharp.svg" alt="" width={20} height={20} className={`relative z-50 ${theme === 'dark' ? 'filter invert' : ''}`}></Image>
                 </button>
                 {dropDown && (
                     <div className={`
@@ -156,7 +156,7 @@ export function Hamburguer(){
                                 z-50 
                                 `}></Image>
                             </a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bragagleisson@gmail.com" target="_blank" onClick={handleDropExit}>
+                            <a href="mailto:bragagleisson@gmail.com" target="_blank" onClick={handleDropExit}>
                             <Image src="svg/email.svg" alt="" width={20} height={20} className={`
                                 ${theme === 'light' ? "hover:bg-[#F4F4F5] filter invert" : "hover:bg-[#393536]"}
                                 ${theme === 'dark' ? " hover:bg-[#393536] text-white" : "hover:bg-[#F4F4F5] filter invert"}

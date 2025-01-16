@@ -17,7 +17,7 @@
         "about": {
             "title": "About me",
             "me": "I am from Viamão - RS, next to Porto Alegre. I am a Systems Analysis and Development student at Unisenac College, in my 4th semester. I am currently looking to make a career transition and my goal is to become a Fullstack Developer. Today, in addition to college, I do my best to study in my free time and develop projects to consolidate my skills. I currently have experience and projects in some technologies such as ",
-            "me-techs": "Python, NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, GitHub and Git  Versioning",
+            "me-techs": "NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, GitHub and Git  Versioning",
             "curriculum": "Curriculum"
         },
         "skillsLanguage": {
@@ -30,13 +30,13 @@
                 "title-two": "inventory management"
             },
             "backend": {
-                "title-one": "developing",
-                "title-two": "developing",
+                "title-one": "API REST Car Rental",
+                "title-two": "API REST Bank Trasaction",
                 "title-three": "developing",
                 "title-four": "developing"
             },
             "fullstack": {
-                "title-one": "developing",
+                "title-one": "burguer",
                 "title-two": "developing",
                 "title-three": "developing"
             }

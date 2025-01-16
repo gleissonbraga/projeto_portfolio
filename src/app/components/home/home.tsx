@@ -44,7 +44,7 @@ export default function HomePage() {
             lg:pt-50
             lg:pl-60
             xl:pt-64
-            
+            2xl:w-[60%]
             ">
                 <h1 className={`
                 ${theme === 'light' ? "text-[#F5080C]" : "text-[#546aab]"}
@@ -57,6 +57,7 @@ export default function HomePage() {
                 
                 sm:text-[48px]
                 xl:text-[60px]
+                
                 `}
                 >
                     {t('main.work')}

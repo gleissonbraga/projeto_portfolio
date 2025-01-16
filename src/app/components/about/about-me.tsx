@@ -55,6 +55,7 @@ export function About(){
                   items-center 
                   justify-evenly
                   min-[320px]:w-full
+                  min-[320px]:gap-4
                   lg:w-[52%]
                   `} 
                   >
