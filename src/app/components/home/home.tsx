@@ -3,12 +3,13 @@
 import { useTheme } from "../../hooks/themeContext";
 import Image from "next/image"
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../../hooks/I18nextContext";
 
 
 export default function HomePage() {
     const {theme} = useTheme()
-
-        const { t } = useTranslation()
+    const { t } = useTranslation()
+    const { currentLanguage } = useLanguage()
 
 
     return (
@@ -33,7 +34,7 @@ export default function HomePage() {
             gap-4
             min-[320px]:w-full
             min-[320px]:pt-40
-            min-[320px]:pl-10
+            min-[320px]:pl-6
             min-[475px]:w-[80%]
             sm:w-[64%]
             sm:pt-50
@@ -48,11 +49,12 @@ export default function HomePage() {
                 <h1 className={`
                 ${theme === 'light' ? "text-[#F5080C]" : "text-[#546aab]"}
                 ${theme === 'dark' ? "text-[#546aab]" : "text-[#F5080C]"}
+                ${currentLanguage === 'pt' ? 'min-[320px]:text-[30px]' : 'min-[320px]:text-[38px]'}
                 uppercase 
                 text-[60px] 
                 font-extrabold 
                 text-stroke
-                min-[320px]:text-[26px]
+                
                 sm:text-[48px]
                 xl:text-[60px]
                 `}
