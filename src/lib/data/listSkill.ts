@@ -13,41 +13,51 @@ export const skillList = [
     },
     {
         id: 3,
+        image: "svg/java.svg",
+        name: "Java"
+    },
+    {
+        id: 4,
+        image: "svg/springboot.svg",
+        name: "Spring Boot"
+    },
+    {
+        id: 5,
         image: "svg/nodejs.svg",
         name: "Node.js"
     },
     {
-        id: 4,
+        id: 6,
         image: "svg/typescript.svg",
         name: "TypeScript"
     },
     {
-        id: 5,
+        id: 7,
         image: "svg/react.svg",
         name: "React"
     },
     {
-        id: 6,
+        id: 8,
         image: "svg/nextjs.svg",
         name: "Next.js"
     },
     {
-        id: 7,
+        id: 9,
         image: "svg/tailwind.svg",
         name: "Tailwind"
     },
     {
-        id: 9,
+        id: 10,
         image: "svg/postgres.svg",
         name: "Postgres"
     },
     {
-        id: 10,
+        id: 11,
         image: "svg/git.svg",
         name: "Git"
     },
     {
-        id: 11,
+        id: 12,
         image: "svg/github-black.svg",
         name: "GitHub"
     },
