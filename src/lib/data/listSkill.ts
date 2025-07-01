@@ -13,13 +13,13 @@ export const skillList = [
     },
     {
         id: 3,
-        image: "svg/java.svg",
-        name: "Java"
+        image: "svg/csharp.svg",
+        name: "C#"
     },
     {
         id: 4,
-        image: "svg/springboot.svg",
-        name: "Spring Boot"
+        image: "svg/dotnet.svg",
+        name: ".NET"
     },
     {
         id: 5,
