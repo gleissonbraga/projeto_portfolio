@@ -53,11 +53,16 @@ export const skillList = [
     },
     {
         id: 11,
+        image: "svg/sql_server.svg",
+        name: "SQL Server"
+    },
+    {
+        id: 12,
         image: "svg/git.svg",
         name: "Git"
     },
     {
-        id: 12,
+        id: 13,
         image: "svg/github-black.svg",
         name: "GitHub"
     },
