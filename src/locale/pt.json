@@ -15,8 +15,8 @@
         },
        "about": {
             "title": "Sobre",
-            "me": "Sou natural de Viamão - RS ao lado de Porto Alegre. Estudante de Análise e Desenvolvimento de Sistemas na Faculdade Unisenac, cursando 4° semestre. Atualmente procuro realizar a transição de carreira e busco como meta ser um Desenvolvedor Fullstack. Hoje além da faculdade me esforço ao máximo para estudar nas horas vagas e desenvolver projetos para fixação. Atualmente possuo expência e projetos em algumas tecnologias como ",
-            "me-techs": "NodeJS, Typescript, ReactJS, NextJS, PostgreSQL, Versionamento Git e GitHub",
+            "me": "Sou desenvolvedor e estudante de Análise e Desenvolvimento de Sistemas (5° semestre) na Faculdade UniSenac, em Porto Alegre - RS. Atualmente, atuo como estagiário na área de desenvolvimento com .NET, aplicando na prática meus conhecimentos para criar soluções tecnológicas eficientes e de alto impacto. Tenho foco em desenvolvimento fullstack, sempre buscando as melhores práticas de programação para entregar soluções de qualidade e atuo com as seguintes tecnologias: ",
+            "me-techs": ".NET Core, NodeJS, Typescript, ReactJS, SQL Server, PostgreSQL, Docker, AWS, Git and GitHub",
             "curriculum": "Currículo"
        },
         "skillsLanguage": {

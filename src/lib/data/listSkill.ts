@@ -19,7 +19,7 @@ export const skillList = [
     {
         id: 4,
         image: "svg/dotnet.svg",
-        name: ".NET"
+        name: ".NET Core"
     },
     {
         id: 5,
