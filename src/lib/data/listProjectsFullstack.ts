@@ -38,7 +38,7 @@ export const projectsFullstack = [
             },
             {   
                 idSvg: 2,
-                svg: "svg/Postgres.svg"
+                svg: "svg/postgres.svg"
             },
             {   
                 idSvg: 3,
@@ -50,7 +50,7 @@ export const projectsFullstack = [
             },
             {   
                 idSvg: 5,
-                svg: "svg/Docker.svg"
+                svg: "svg/docker.svg"
             },
             {   
                 idSvg: 6,
