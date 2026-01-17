@@ -1,6 +1,5 @@
 "use client";
 import { useTheme } from "@/app/hooks/themeContext";
-import { t } from "i18next";
 import Title from "../title/title";
 import { useTranslation } from "react-i18next";
 import { professionalExperience } from "@/lib/data/listExperience";
@@ -47,7 +46,7 @@ export function Experience() {
             ${theme === "light" ? "border-[#D62828]" : "border-[#546aab]"}
             ${theme === "dark" ? "border-[#546aab]" : "border-[#D62828]"}`}
             >
-              {professionalExperience.map((job, idx) => (
+              {professionalExperience.map((job) => (
                 <div
                   key={job.id}
                   className="relative md:grid md:grid-cols-5 gap-8 items-start group"
@@ -143,7 +142,7 @@ export function Experience() {
             ${theme === "light" ? "border-[#D62828]" : "border-[#546aab]"}
             ${theme === "dark" ? "border-[#546aab]" : "border-[#D62828]"}`}
             >
-              {education.map((job, idx) => (
+              {education.map((job) => (
                 <div
                   key={job.id}
                   className="relative md:grid md:grid-cols-5 gap-8 items-start group"
