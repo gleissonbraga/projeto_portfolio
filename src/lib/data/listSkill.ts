@@ -63,8 +63,8 @@ export const skillList = [
     },
     {
         id: 13,
-        image: "svg/aws.svg",
-        name: "AWS"
+        image: "svg/azure.svg",
+        name: "Azure"
     },
     {
         id: 14,

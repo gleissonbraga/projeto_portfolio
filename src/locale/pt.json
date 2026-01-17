@@ -4,6 +4,7 @@
             "home": "início",
             "about": "sobre",
             "skills": "habilidades",
+            "experience": "Experiência",
             "projects": "projetos",
             "light": "Claro",
             "dark": "Escuro"
@@ -19,6 +20,29 @@
             "me-techs": ".NET Core, NodeJS, Typescript, ReactJS, SQL Server, PostgreSQL, Docker, AWS, Git and GitHub",
             "curriculum": "Currículo"
        },
+
+       "experience": {
+        "title": "Experiência",
+        "titleProfessional": "Profissional",
+        "work_fabesul": {
+            "role": "Desenvolvedor Fullstack - Estágio",
+            "company": "Fabesul",
+            "period": "07/2025 - Present",
+            "description": "Atuação no desenvolvimento de softwares e soluções alinhadas às necessidades do projeto, aplicando arquitetura MVC, modelagem e gerenciamento de banco de dados, além da identificação e correção de bugs."
+            }
+       },
+
+        "study": {
+            "title": "Formação Acadêmica",
+            "university": {
+                "name": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+                "nameUniversity": "UniSenac",
+                "period": "08/2023 - Cursando",
+                "semestre": "6° Semestre",
+                "description": "Análise e prototipagem de sistemas, desenvolvimento e testes de aplicações Front-End e Back-End, utilização de frameworks modernos, arquitetura de software, modelagem e gerenciamento de bancos de dados, fundamentos de Inteligência Artificial, arquitetura em nuvem (Cloud Computing) e DevOps"
+            }
+       },
+
         "skillsLanguage": {
             "title": "habilidades"
         },
@@ -36,7 +60,7 @@
             },
             "fullstack": {
                 "title-one": "hamburgueria",
-                "title-two": "em desenvolvimento",
+                "title-two": "Padaria São José",
                 "title-three": "em desenvolvimento"
             }
         },

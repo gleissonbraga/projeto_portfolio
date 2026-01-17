@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next"
 
 
 const Projects: React.FC = () => {
-    const [activeTab, setActiveTab] = useState<'frontend' | 'backend' | 'fullstack'>('frontend')
+    const [activeTab, setActiveTab] = useState<'frontend' | 'backend' | 'fullstack'>('fullstack')
     const {theme} = useTheme()
     const { t } = useTranslation()
     

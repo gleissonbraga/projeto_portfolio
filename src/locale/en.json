@@ -4,6 +4,7 @@
             "home": "home",
             "about": "about me",
             "skills": "skills",
+            "experience": "Experiencie",
             "projects": "projects",
             "light": "Light",
             "dark": "Dark"
@@ -20,6 +21,27 @@
             "me-techs": ".NET Core, NodeJS, Typescript, ReactJS, SQL Server, PostgreSQL, Docker, AWS, Git and GitHub",
             "curriculum": "Curriculum"
         },
+       "experience": {
+        "title": "Professional Experience",
+        "titleProfessional": "Professional",
+        "work_fabesul": {
+            "role": "Fullstack Developer - Internship",
+            "company": "Fabesul",
+            "period": "2025-07 - Present",
+            "description": "Responsibilities include developing software and solutions aligned with project needs, applying MVC architecture, database modeling and management, as well as identifying and correcting bugs."
+            }
+       },
+
+       "study": {
+            "title": "Education",
+            "university": {
+                "name": "Technologist in Systems Analysis and Development",
+                "nameUniversity": "UniSenac",
+                "period": "2023-8 Studying",
+                "semestre": "6° Semester",
+                "description": "Systems analysis and prototyping, development and testing of Front-End and Back-End applications, use of modern frameworks, software architecture, database modeling and management, fundamentals of Artificial Intelligence, cloud architecture (Cloud Computing), and DevOps"
+            }
+       },
         "skillsLanguage": {
             "title": "Skills"
         },
@@ -37,7 +59,7 @@
             },
             "fullstack": {
                 "title-one": "burguer",
-                "title-two": "developing",
+                "title-two": "são joão bakery ",
                 "title-three": "developing"
             }
         },

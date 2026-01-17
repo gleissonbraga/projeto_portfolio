@@ -121,6 +121,22 @@ export function Menu() {
                     >
                         {t('nav.about')}
                     </Link>
+                     <Link
+                        href="#experience"
+                        className={` 
+                            ${theme === 'light' ? " hover:decoration-[#D62828]" : " hover:decoration-[#546aab] "}
+                            ${theme === 'dark' ? " hover:decoration-[#546aab]" : " hover:decoration-[#D62828] "}
+
+                             hover:underline 
+                             hover:underline-offset-4 
+                             hover:opacity-85
+                             md:text-[0.8rem]
+                             lg:text-[1rem]
+                             xl:text-lg
+                             `}
+                    >
+                        {t('nav.experience')}
+                    </Link>
                     <Link
                         href="#skill"
                         className={` 

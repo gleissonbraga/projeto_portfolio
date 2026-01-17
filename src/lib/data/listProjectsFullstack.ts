@@ -27,6 +27,39 @@ export const projectsFullstack = [
         repository: "https://github.com/gleissonbraga/projeto_hamburgueria",
         deploy: "#"
     },
+    {   
+        id: 2,
+        name: "projects.fullstack.title-two",
+        image: "/image/fullstack/bakery.jpg",
+        techs: [
+            {   
+                idSvg: 1,
+                svg: "svg/dotnet.svg"
+            },
+            {   
+                idSvg: 2,
+                svg: "svg/Postgres.svg"
+            },
+            {   
+                idSvg: 3,
+                svg: "svg/react.svg"
+            },
+            {   
+                idSvg: 4,
+                svg: "svg/tailwind.svg"
+            },
+            {   
+                idSvg: 5,
+                svg: "svg/Docker.svg"
+            },
+            {   
+                idSvg: 6,
+                svg: "svg/git.svg"
+            },
+        ],
+        repository: "https://github.com/gleissonbraga/projeto_padaria_frontend",
+        deploy: "https://projeto-padaria-frontend.vercel.app/"
+    },
     // {
     //     id: 2,
     //     name: "projects.fullstack.title-two",

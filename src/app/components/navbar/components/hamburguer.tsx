@@ -117,7 +117,23 @@ export function Hamburguer(){
                                         `}
                                 >
                                     {t('nav.skills')}
-                                    </Link>
+                                </Link>
+                                <Link
+                                    onClick={handleDropExit}
+                                    href="#experience"
+                                    className={` 
+                                        ${theme === 'light' ? " hover:decoration-[#D62828]" : " hover:decoration-[#546aab] "}
+                                        ${theme === 'dark' ? " hover:decoration-[#546aab]" : " hover:decoration-[#D62828] "}
+
+                                        hover:underline 
+                                        hover:underline-offset-4 
+                                        hover:opacity-85
+                                        uppercase
+                                        text-[14px]
+                                        `}
+                                >
+                                    {t('nav.experience')}
+                                </Link>
                                     <Link
                                     onClick={handleDropExit}
                                     href="#projects"

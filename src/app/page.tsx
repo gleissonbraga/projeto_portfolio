@@ -1,5 +1,6 @@
 
 import { About } from "./components/about";
+import { Experience } from "./components/experience";
 import { Footer } from "./components/footer/footer-body";
 import HomePage from "./components/home/home";
 import { Menu } from "./components/navbar";
@@ -13,6 +14,7 @@ export default function Home() {
       <Menu />
       <HomePage />
       <About />
+      <Experience/>
       <Skills />
       <Projects />
       <Footer />
