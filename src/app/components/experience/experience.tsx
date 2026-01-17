@@ -64,7 +64,6 @@ export function Experience() {
                   </div>
                   <div
                     className={`absolute -left-[41px] md:left-auto md:right-[calc(80%+15px)] w-5 h-5 rounded-full
-                   bg-[#D62828] 
                    ${
                      theme === "light"
                        ? "bg-[#D62828]"
@@ -81,7 +80,7 @@ export function Experience() {
                     className={`md:col-span-4
                     ${
                       theme === "light"
-                        ? "bg-white"
+                        ? "bg-white "
                         : "bg-[#292626] border-[#1D1D1D]"
                     }
                    ${theme === "dark" ? "bg-[#292626]" : "bg-white"}
@@ -160,7 +159,6 @@ export function Experience() {
                   </div>
                   <div
                     className={`absolute -left-[41px] md:left-auto md:right-[calc(80%+15px)] w-5 h-5 rounded-full
-                   bg-[#D62828] 
                    ${
                      theme === "light"
                        ? "bg-[#D62828]"
